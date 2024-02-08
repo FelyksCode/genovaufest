@@ -2,12 +2,12 @@ import "./CarouselStyle.css";
 
 export default function CarouselDivisi() {
     return (
-        <div className="flex h-96 carousel carousel-vertical ">
+        <div className="flex h-96 carousel carousel-vertical">
             <div
                 id="slide1"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide13" className="py-5">
@@ -51,9 +51,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide2"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide1" className="py-5">
@@ -93,9 +93,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide3"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide2" className="py-5">
@@ -135,9 +135,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide4"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide3" className="py-5">
@@ -177,9 +177,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide5"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide4" className="py-5">
@@ -219,9 +219,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide6"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide5" className="py-5">
@@ -261,9 +261,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide7"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide6" className="py-5">
@@ -303,9 +303,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide8"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide7" className="py-5">
@@ -345,9 +345,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide9"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide8" className="py-5">
@@ -387,9 +387,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide10"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide9" className="py-5">
@@ -429,9 +429,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide11"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide10" className="py-5">
@@ -471,9 +471,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide12"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide11" className="py-5">
@@ -513,9 +513,9 @@ export default function CarouselDivisi() {
             </div>
             <div
                 id="slide13"
-                className="carousel-item h-full bg-slate-100 justify-center "
+                className="carousel-item h-full bg-purple-400 justify-center "
             >
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center bg-purple-50 rounded-md ">
                     <div className="flex flex-row justify-evenly">
                         <div className="flex flex-col items-center justify-center px-5">
                             <a href="#slide12" className="py-5">
