@@ -16,6 +16,9 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/divisi', function () {
+    return Inertia::render('DivisiPage');
+});
 Route::get('/', function () {
     return Inertia::render('Homepage');
 });

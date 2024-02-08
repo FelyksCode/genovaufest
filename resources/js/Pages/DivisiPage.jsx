@@ -1,15 +1,13 @@
 import React from "react";
 import { Head } from "@inertiajs/react";
-import Carousel from "@/Components/homepage/Carousel";
 import Footer from "@/Components/Footer";
-
-export default function Homepage() {
+import CarouselDivisi from "@/Components/divisipage/CarouselDivisi";
+export default function DivisiPage() {
     return (
         <div className="flex-row">
-            <Head title="HomePage" />
-            #ini navbar
+            <Head title="Divisi Page" />
             <div>
-                <Carousel />
+                <CarouselDivisi />
             </div>
             <Footer />
         </div>
