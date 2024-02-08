@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+
 export default function CarouselDivisi() {
     return (
         <div className="flex h-96 carousel carousel-vertical ">
@@ -11,27 +13,27 @@ export default function CarouselDivisi() {
                             <a href="#slide13" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Coeus-40154209.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Atlas-a1cf2a94.webp"
                             />
                             <a href="#slide2 " className="py-5">
                                 <img
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     src="https://www.umnfestival.com/assets/Metis-de566228.webp"
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>Atlas</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 “goddess of endurance, strength &
                                 astronomy”“celestial sphere” “Atlas (Ἄτλας)
                                 merupakan makhluk laut yang menopang pilar-pilar
@@ -58,26 +60,26 @@ export default function CarouselDivisi() {
                                 <img
                                     src="https://www.umnfestival.com/assets/Atlas-a1cf2a94.webp"
                                     alt="↑"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Metis-de566228.webp"
                             />
                             <a href="#slide3" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Antheia-5743d4eb.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -99,27 +101,27 @@ export default function CarouselDivisi() {
                             <a href="#slide2" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Metis-de566228.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Antheia-5743d4eb.webp"
                             />
                             <a href="#slide4" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Mnemosyne-324cdeb3.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -141,27 +143,27 @@ export default function CarouselDivisi() {
                             <a href="#slide3" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Antheia-5743d4eb.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Mnemosyne-324cdeb3.webp"
                             />
                             <a href="#slide5" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Tyche-73ecf132.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -183,27 +185,27 @@ export default function CarouselDivisi() {
                             <a href="#slide4" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Mnemosyne-324cdeb3.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Tyche-73ecf132.webp"
                             />
                             <a href="#slide6" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Themis-7bc8f39d.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -225,27 +227,27 @@ export default function CarouselDivisi() {
                             <a href="#slide5" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Tyche-73ecf132.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Themis-7bc8f39d.webp"
                             />
                             <a href="#slide7" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Demeter-9b64022d.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -267,27 +269,27 @@ export default function CarouselDivisi() {
                             <a href="#slide6" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Themis-7bc8f39d.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Demeter-9b64022d.webp"
                             />
                             <a href="#slide8" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Nike-6ee8d3a2.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -309,27 +311,27 @@ export default function CarouselDivisi() {
                             <a href="#slide7" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Demeter-9b64022d.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Nike-6ee8d3a2.webp"
                             />
                             <a href="#slide9" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Hermes-208a91e8.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -351,27 +353,27 @@ export default function CarouselDivisi() {
                             <a href="#slide8" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Nike-6ee8d3a2.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Hermes-208a91e8.webp"
                             />
                             <a href="#slide10" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Iris-4c1328b5.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -393,27 +395,27 @@ export default function CarouselDivisi() {
                             <a href="#slide9" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Hermes-208a91e8.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Iris-4c1328b5.webp"
                             />
                             <a href="#slide11" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Plutus-7af29493.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -435,27 +437,27 @@ export default function CarouselDivisi() {
                             <a href="#slide10" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Iris-4c1328b5.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Plutus-7af29493.webp"
                             />
                             <a href="#slide12" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Muses-459e02fe.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -477,27 +479,27 @@ export default function CarouselDivisi() {
                             <a href="#slide11" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Plutus-7af29493.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Muses-459e02fe.webp"
                             />
                             <a href="#slide13" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Coeus-40154209.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
@@ -519,27 +521,27 @@ export default function CarouselDivisi() {
                             <a href="#slide12" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Muses-459e02fe.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↑"
                                 />
                             </a>
                             <img
-                                className="object-contain h-48"
+                                className="object-contain h-36 sm:h-48"
                                 src="https://www.umnfestival.com/assets/Coeus-40154209.webp"
                             />
                             <a href="#slide1" className="py-5">
                                 <img
                                     src="https://www.umnfestival.com/assets/Atlas-a1cf2a94.webp"
-                                    className="object-contain h-16 "
+                                    className="object-contain h-14 sm:h-16 "
                                     alt="↓"
                                 />
                             </a>
                         </div>
-                        <div className="flex justify-center w-96 flex-col">
+                        <div className="flex justify-center w-64 sm:w-96 flex-col">
                             <h1>
                                 <b>NAME</b>
                             </h1>
-                            <h2 className="text-neutral text-wrap">
+                            <h2 className="text-xs sm:text-neutral text-wrap">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Commodi saepe itaque
                                 perspiciatis quaerat? Doloribus officia, quidem
