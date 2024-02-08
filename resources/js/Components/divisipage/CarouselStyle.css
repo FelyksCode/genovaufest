@@ -3,3 +3,18 @@
         width: 35rem;
     }
 }
+
+.pembungkuscarousel {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Assets/HomeBgNew.png);
+    background-size: 100vw 100vh;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .pembungkuscarousel {
+        background-image: url(../Assets/Homebgphone.png);
+    }
+}
