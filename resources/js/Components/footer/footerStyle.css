@@ -1,0 +1,12 @@
+#footer {
+    flex-direction: column;
+    align-items: start;
+    background-image: linear-gradient(
+        0deg,
+        rgb(178, 138, 103) 0%,
+        rgb(146, 100, 69)
+    );
+    @media (min-width: 769px) {
+        flex-direction: row;
+    }
+}

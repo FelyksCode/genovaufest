@@ -1,6 +1,6 @@
 import React from "react";
 import { Head } from "@inertiajs/react";
-import Footer from "@/Components/Footer";
+import Footer from "@/Components/footer/Footer";
 import CarouselDivisi from "@/Components/divisipage/CarouselDivisi";
 import Example from "@/Components/divisipage/VerticalCarousel/Example";
 import "./Style.css";
