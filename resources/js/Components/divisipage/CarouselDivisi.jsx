@@ -6,7 +6,7 @@ export default function CarouselDivisi() {
             <div className="flex h-3/4 carousel carousel-vertical">
                 <div
                     id="slide1"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -52,7 +52,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide2"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -94,7 +94,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide3"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -136,7 +136,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide4"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -178,7 +178,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide5"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -220,7 +220,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide6"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -262,7 +262,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide7"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -304,7 +304,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide8"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -346,7 +346,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide9"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -388,7 +388,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide10"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -430,7 +430,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide11"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -472,7 +472,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide12"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
@@ -514,7 +514,7 @@ export default function CarouselDivisi() {
                 </div>
                 <div
                     id="slide13"
-                    className="carousel-item h-full justify-center bg-slate-600/50 rounded-md "
+                    className="carousel-item h-full justify-center bg-base-600/50 rounded-md "
                 >
                     <div className="flex flex-col justify-center  rounded-md ">
                         <div className="flex flex-row justify-evenly">
