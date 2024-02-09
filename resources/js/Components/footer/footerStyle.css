@@ -10,3 +10,45 @@
         flex-direction: row;
     }
 }
+
+strong {
+    font-size: 15px;
+    color: rgb(245, 214, 63);
+}
+
+.Footer-Foot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: rgba(219, 219, 219, 1);
+    background: rgb(71, 33, 33);
+    background: -moz-linear-gradient(
+        0deg,
+        rgba(71, 33, 33, 1) 0%,
+        rgba(82, 56, 38, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        rgba(71, 33, 33, 1) 0%,
+        rgba(82, 56, 38, 1) 100%
+    );
+    background: linear-gradient(
+        0deg,
+        rgba(71, 33, 33, 1) 0%,
+        rgba(82, 56, 38, 1) 100%
+    );
+    font-size: 15px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+
+    .purpleText {
+        color: yellow;
+    }
+    /* 
+    @media screen and (max-width: index.$sm) {
+        font-size: 15px;
+        line-height: 20px;
+    } */
+}

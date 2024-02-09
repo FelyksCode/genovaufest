@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer
             id="footer"
-            className="flex footer p-10 bg-neutral text-neutral-content justify-between"
+            className="flex footer px-10 bg-neutral text-neutral-content justify-between"
         >
             <aside className="flex flex-col justify-center self-center">
                 <Sparkle>
@@ -18,7 +18,7 @@ export default function Footer() {
             </aside>
             <div className="flex flex-col flex-start items-start justify-start">
                 <Sparkle>
-                    <h6 className="footer-title">ADDRESS</h6>
+                    <strong className="footer-title">ADDRESS</strong>
                 </Sparkle>
                 <p>
                     Universitas Multimedia Nusantara
@@ -31,7 +31,7 @@ export default function Footer() {
                 </p>
             </div>
             <nav className="justify-self-end">
-                <h6 className="footer-title">FOLLOW US!</h6>
+                <strong className="footer-title">FOLLOW US!</strong>
                 <div className="grid grid-flow-col gap-4 ">
                     <a>
                         <svg
@@ -68,6 +68,18 @@ export default function Footer() {
                     </a>
                 </div>
             </nav>
+            <div className="Footer-Foot flex justify-center self-center">
+                <p className="text-center">
+                    {" "}
+                    © UMN FESTIVAL 2023
+                    <br />
+                    Managed by{" "}
+                    <Sparkle>
+                        <strong>Coeus</strong>
+                    </Sparkle>{" "}
+                    UMN Festival 2023
+                </p>
+            </div>
         </footer>
     );
 }
