@@ -71,6 +71,14 @@ function Slide({
     } else if (offsetFromMiddle < 0) {
         translateY -= translateYoffset;
     }
+
+    const handleWheel = (event) => {
+        // Detect scroll direction
+        const direction = event.deltaY > 0 ? 1 : -1;
+        // Move the slide
+        moveSlide(direction);
+    };
+
     return (
         <Spring
             to={{
@@ -90,6 +98,7 @@ function Slide({
                         ...style,
                         zIndex: Math.abs(Math.abs(offsetFromMiddle) - 2),
                     }}
+                    onWheel={handleWheel} // Add onWheel event handler
                 >
                     <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
                         <div className="flex flex-row items-center ">
