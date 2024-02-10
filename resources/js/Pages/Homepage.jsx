@@ -3,17 +3,18 @@ import { Head } from "@inertiajs/react";
 import Carousel from "@/Components/homepage/Carousel";
 import Footer from "@/Components/footer/Footer";
 import Navbar from "@/Components/Navbar/Navbar";
+import Hero from "@/Components/homepage/Hero";
+
+import "./Style.css";
 
 export default function Homepage() {
     return (
-        <div className="flex-row">
+        <div className="flex-row badan">
             <Head title="HomePage" />
             <Navbar />
-            <div>
-                <Carousel />
-                <div className="h-96">tes</div>
-                <div className="h-96">tes</div>
-            </div>
+
+            <Hero />
+
             <Footer />
         </div>
     );
