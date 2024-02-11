@@ -7,7 +7,7 @@
         rgb(146, 100, 69)
     );
     @media (min-width: 769px) {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
