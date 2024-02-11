@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
+import Sparkle from "@/Components/animation/sparkle/Sparkle";
 import HomeBgNew from "../../Assets/HomeBgNew.png";
 let slides = [
     {
@@ -172,13 +173,19 @@ export default class Example extends Component {
                     flexDirection: "column",
                     justifyContent: "center",
                     width: "100vw",
-                    height: "100vh",
+                    height: "110vh",
                     margin: "0 auto",
                     background: `url(${HomeBgNew})`,
                     backgroundSize: "cover", // Example to cover the entire div
                     backgroundPosition: "center", // Center the background image
+                    padding: "50px",
                 }}
             >
+                <div className="py-6 flex justify-center  ">
+                    <strong className="py-5 fixed z-10">
+                        <Sparkle>OUR DIVISON</Sparkle>
+                    </strong>
+                </div>
                 <VerticalCarousel
                     slides={slides}
                     offsetRadius={this.state.offsetRadius}
