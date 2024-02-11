@@ -12,9 +12,7 @@ export default function Homepage() {
         <div className="flex-row badan">
             <Head title="HomePage" />
             <Navbar />
-
             <Hero />
-
             <Footer />
         </div>
     );

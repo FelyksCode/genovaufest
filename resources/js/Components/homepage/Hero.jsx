@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="w-9/12 sm:w-11/12">
-                    <h1 className="mb-5 text-5xl font-bold">
+                    <h1 className="mt-20 md:mt-10 mb-5 text-5xl font-bold">
                         Are You Ready Legions?
                     </h1>
                     <p className="mb-5">

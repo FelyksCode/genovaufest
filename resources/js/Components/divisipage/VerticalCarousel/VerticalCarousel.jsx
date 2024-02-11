@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "@emotion/styled";
 import Slide from "./Slide";
 import PropTypes from "prop-types";
-import Sparkle from "@/Components/animation/sparkle/Sparkle";
 
 const Wrapper = styled.div`
     position: relative;
