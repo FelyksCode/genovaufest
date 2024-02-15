@@ -20,6 +20,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "daisyui": "^4.6.1"
+        "daisyui": "^4.6.1",
+        "react-reveal": "^1.2.2"
     }
 }
