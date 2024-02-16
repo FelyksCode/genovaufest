@@ -1,87 +1,43 @@
-import React from "react";
+import { Link } from '@inertiajs/react'
+import IonIcon from '@reacticons/ionicons'
+import React, { useEffect, useState } from 'react'
+import Button from './Button'
 
 function Navbar() {
-    return (
-        <div className="pembungkusnavbar">
-            <div className="navbar bg-neutral-500">
-                {/* <div className=""> */}
-                <div className="navbar-start">
-                    <div className="dropdown ">
-                        <div
-                            tabIndex={0}
-                            role="button"
-                            className="btn btn-ghost lg:hidden"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
-                            </svg>
-                        </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-500 rounded-box w-52"
-                        >
-                            <li>
-                                <a>Item 1</a>
-                            </li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li>
-                                        <a>Submenu 1</a>
-                                    </li>
-                                    <li>
-                                        <a>Submenu 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a>Item 3</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li>
-                            <a>Item 1</a>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul className="p-2">
-                                    <li>
-                                        <a>Submenu 1</a>
-                                    </li>
-                                    <li>
-                                        <a>Submenu 2</a>
-                                    </li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <a>Item 3</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div>
-                {/* </div> */}
+    let Links =[
+        {name:"HOME", link: "/"},
+        {name:"ABOUT US",link :"/"} ,
+        {name:"DIVISION",link : "/"},
+        {name:"CONTACT",link : "/"}
+    ];
+    let [open, setOpen]=useState(false);
+  return (
+    <div className='shadow-md w-full fixed top-0 left-0'>
+        <div className="md:flex items-center justify-between bg-slate-100 py-4 md:px-10 px-7">
+            <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins text-gray-800]'>
+                <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+                    <IonIcon name="logo-microsoft"></IonIcon>
+                </span>
+                TESTING
             </div>
+            <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden' >
+                <IonIcon name={open ? 'close':'menu'}></IonIcon>
+            </div>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-slate-100 md:z-auto z-[-1] left-0 w-full md:w-auto md:px-0 px-[200px] transition-all duration-500 ease-in ${open ? 'top-15 opacity-100':'top-[-485px]'} md:opacity-100 opacity-0`}>
+                {
+                    Links.map((link)=>(
+                        <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7 text-center'>
+                            <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+                        </li>
+                    ))
+                }
+                <Button>
+                    Register
+                </Button>
+            </ul>
         </div>
-    );
+    </div>
+  )
 }
 
-export default Navbar;
+export default Navbar

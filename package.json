@@ -20,6 +20,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
+        "@reacticons/ionicons": "^7.1.0",
         "daisyui": "^4.6.1",
         "react-reveal": "^1.2.2"
     }
