@@ -9,6 +9,7 @@ export default {
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
         "./resources/js/**/*.jsx",
+        'node_modules/preline/dist/*.js',
     ],
 
     theme: {
@@ -19,7 +20,10 @@ export default {
         },
     },
 
-    plugins: [forms, daisyui],
+    plugins: [forms, daisyui,
+        require('@tailwindcss/forms'),
+        require('preline/plugin'),
+    ],
 
     daisyui: {
         themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]

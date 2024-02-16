@@ -1,11 +1,14 @@
 import React from "react";
 import "./Tujuanstyle.css";
+import Carousel from "./Carousel";
+Carousel
 
 function Tujuan() {
     return (
-        <div className="pembungkustujuan">
-            <h1>asdkjahsd</h1>
+        <div>
+            <Carousel></Carousel>
         </div>
+        
     );
 }
 

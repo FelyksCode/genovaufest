@@ -12,10 +12,10 @@ function Navbar() {
     ];
     let [open, setOpen]=useState(false);
   return (
-    <div className='shadow-md w-full fixed top-0 left-0'>
-        <div className="md:flex items-center justify-between bg-slate-100 py-4 md:px-10 px-7">
+    <div className='shadow-md w-[95%] fixed top-2 left-4 md:left-8 z-10 rounded-3xl'>
+        <div className="md:flex items-center justify-between bg-slate-100 py-4 md:px-10 px-7 rounded-3xl">
             <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins text-gray-800]'>
-                <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+                <span className='text-3xl text-indigo-600 mr-4 pt-2'>
                     <IonIcon name="logo-microsoft"></IonIcon>
                 </span>
                 TESTING

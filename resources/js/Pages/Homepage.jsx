@@ -3,14 +3,21 @@ import { Head } from "@inertiajs/react";
 import Navbar from "@/Components/Navbar/Navbar";
 import Footer from "@/Components/Footer/Footer";
 import Tujuan from "@/Components/Tujuan/Tujuan";
+import Home from "@/Components/Home/Home";
+Home
 
 export default function Homepage() {
     return (
-        <div className=" bg-red-500">
-            <Head title="HomePage" />
-            <Navbar />
-            <Tujuan />
-            <Footer />
-        </div>
+        <>
+            <head title="UMN FESTIVAL"/>
+            <header>
+                <Navbar />
+            </header>
+            <section className='overflow-hidden'>
+                <Tujuan></Tujuan>
+                <Home></Home>
+                <Footer></Footer>
+            </section>
+        </>
     );
 }
