@@ -1,13 +1,19 @@
 import React from 'react'
-import { Parallax } from 'react-scroll-parallax'
-import UMN_image from 'public/Images/umn_image.jpg'
-Parallax
+import { Parallax } from 'react-parallax'
+import UMN_Image from '/public/Images/umn1.jpg'
+import Carousel from './Carousel'
+Carousel
 
 
 function ImageOne() {
   return (
-    <Parallax bgImage={UMN_image} strength={800}>
-
+    <Parallax className='relative h-[100vh]' strength={800}>
+        <div className="">
+            <Carousel></Carousel>
+        </div>
+        <div className="flex items-center justify-center absolute h-[100vh] w-[100%]">
+            <span>WELCOME TO UMN Festival</span>
+        </div>
     </Parallax>
   )
 }
