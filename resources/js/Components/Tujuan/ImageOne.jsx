@@ -1,12 +1,12 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
-import Carousel from './Carousel'
+import UMN_image from 'public/Images/umn_image.jpg'
 Parallax
-Carousel
+
 
 function ImageOne() {
   return (
-    <Parallax bgImage={Carousel} strength={800}>
+    <Parallax bgImage={UMN_image} strength={800}>
 
     </Parallax>
   )
