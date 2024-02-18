@@ -1,53 +1,196 @@
 import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      };
+    var settings2= {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
   return (
     <>
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        <div className="slider-container">
+            <Slider {...settings}>
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing1.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing2.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing3.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing4.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing5.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-            </div>
-
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing6.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing7.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing8.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center font-custom'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card'>
+                    <div className='m-2 bg-red-200 rounded-lg shadow-md px-4 py-6 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                        <img src="/Images/Carousels/testing9.png" alt="" className='w-[200px] cursor-pointer m-auto' />
+                        <div className="card-body">
+                            <div className='m-auto text-center'>
+                                <h4>Nama</h4>
+                                <h3>Jurusan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Slider>
         </div>
-
+        <Slider {...settings2} className='m-20 bottom-10 '>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/GENOVA - WEBSITE.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                    <img src="/Images/Carousels/Logo_Divisi/LAZIO - KONSUMSI.png" alt="" className='w-[180px] m-auto' />
+                    <div className="card-body">
+                        <div className='m-auto text-center font-custom'>
+                            <h4>ALBA</h4>
+                            <h3>Ticketing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Slider>
     </>
   )
 }

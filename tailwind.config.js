@@ -17,7 +17,13 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+
+                custom: ["Cinzel", "serif"]
             },
+            colors: {
+                vintage: '#d9bba0',
+                darkvintage: '#8b5b3a',
+            }
         },
     },
 

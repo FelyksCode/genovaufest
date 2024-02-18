@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "watch": "vite build --watch"
     },
     "devDependencies": {
         "@headlessui/react": "^1.4.2",
@@ -22,11 +23,13 @@
     "dependencies": {
         "@reacticons/ionicons": "^7.1.0",
         "daisyui": "^4.6.1",
-        "flowbite": "^2.3.0",
         "parallax-controller": "^1.7.1",
         "preline": "^2.0.3",
         "react-parallax": "^3.5.1",
         "react-reveal": "^1.2.2",
-        "react-scroll-parallax": "^3.4.5"
+        "react-scroll-parallax": "^3.4.5",
+        "react-slick": "^0.30.2",
+        "slick-carousel": "^1.8.1",
+        "watch": "^0.13.0"
     }
 }
