@@ -1,25 +1,48 @@
-import React from 'react'
-import { Parallax } from 'react-parallax'
-import UMN_Image from '/public/Images/umn1.jpg'
-import trailer_umn_festival from '/public/Images/trailer_umn_festival.mp4'
-import Carousel from './Carousel'
-import IonIcon from '@reacticons/ionicons'
-Carousel
-
+import React, { useRef, useEffect, useState } from 'react';
+import UMN_Image from '/public/Images/umn1.jpg';
+import IonIcon from '@reacticons/ionicons';
+import Trailer from "/public/Images/Trailer.mp4";
+import Carousel from './Carousel'; // Import your Carousel component here
+import { Fade } from 'react-reveal';
+Fade
 
 function ImageOne() {
+  const [paddingTop, setPaddingTop] = useState(0);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (videoRef.current) {
+        const scrolled = window.scrollY;
+        videoRef.current.style.transform = `translateY(-${scrolled * 0.5}px)`;
+        setPaddingTop(scrolled * 0.5); // Adjust the padding top based on scroll
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on component mount
+
   return (
-    <div className="">
-        <Parallax className='relative h-[100vh]' bgImage={UMN_Image} strength={800}>
-            <div className="flex items-center justify-center absolute h-[100vh] w-[100%]">
-                <span className='text-white font-extrabold text-[20px] md:text-[50px] font-custom text-center'>WELCOME TO UMN Festival</span>
-            </div>
-            <div className="flex md:ml-[710px] md:pt-[560px] ml-[200px] pt-[420px]">
-                <IonIcon name='caret-down-outline' className='text-white text-[40px] pt-[70px] animate-bounce'></IonIcon>
-            </div>
-        </Parallax>
+    <div className="relative h-screen overflow-hidden pt-[300px] bg-black">
+      <video ref={videoRef} className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted>
+        <source src={Trailer} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <Fade clear duration={3500}>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+          <h1 className="text-4xl md:text-6xl font-bold font-custom">UMN FESTIVAL</h1>
+          <p className="text-lg md:text-xl">SHOW YOUR VALOR FIGHT WITH HONOR</p>
+        </div>  
+      </Fade>
+      
+      <div style={{ paddingTop: `${paddingTop}px` }}></div> {/* Empty div for padding */}
     </div>
-  )  
+  );
 }
 
-export default ImageOne
+export default ImageOne;

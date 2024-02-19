@@ -23,6 +23,10 @@ export default {
             colors: {
                 vintage: '#d9bba0',
                 darkvintage: '#8b5b3a',
+            },
+
+            backgroundImage: {
+                'Crack': "url('/public/Images/crackWall.png')" 
             }
         },
     },

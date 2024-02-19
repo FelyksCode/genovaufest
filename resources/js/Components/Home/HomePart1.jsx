@@ -7,18 +7,17 @@ Carousel
 function HomePart1() {
   return (
     <div className='bg-vintage h-[1200px] w-full m-auto'>
-        <div className='text-center text-[40px] relative '>
-            <Fade left>
+        <div className='text-center text-[40px] relative'>
+            <Fade left duration={1000}>
               <div className="w-full h-full absolute flex top-2 left-2 justify-center items-center">
                   <h1 className='font-custom font-bold'>DIVISION</h1>
               </div>
-              <img src="/Images/Carousels/text-frame-1.png" alt="" className='w-[400px] m-auto'/>
+              <img src="/Images/Carousels/text-frame-1.png" alt="" className='m-auto'/>
             </Fade>
         </div>
-        <Fade left>
-            <Carousel></Carousel>  
+        <Fade left duration={3500}>
+            <Carousel></Carousel>
         </Fade>
-        
     </div>
   )
 }
