@@ -7,7 +7,7 @@
         "watch": "vite build --watch"
     },
     "devDependencies": {
-        "@headlessui/react": "^1.4.2",
+        "@headlessui/react": "^1.7.18",
         "@inertiajs/react": "^1.0.0",
         "@tailwindcss/forms": "^0.5.7",
         "@vitejs/plugin-react": "^4.2.0",
@@ -27,6 +27,8 @@
         "preline": "^2.0.3",
         "react-parallax": "^3.5.1",
         "react-reveal": "^1.2.2",
+        "react-router": "^6.22.1",
+        "react-router-dom": "^6.22.1",
         "react-scroll-parallax": "^3.4.5",
         "react-slick": "^0.30.2",
         "slick-carousel": "^1.8.1",
