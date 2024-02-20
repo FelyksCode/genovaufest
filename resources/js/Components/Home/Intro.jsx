@@ -44,10 +44,10 @@ function Intro({ onIntroEnd }) {
       {/* Play button */}
       {!videoPlayed && (
         <button
-          className="bg-white text-black font-bold py-2 px-4 rounded"
+          className="bg-white text-black font-bold py-4 px-4 rounded"
           onClick={handlePlayButtonClick}
         >
-          Play Intro
+          PLAY
         </button>
       )}
     </div>
