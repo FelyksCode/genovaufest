@@ -18,6 +18,8 @@ use Inertia\Inertia;
 */
 
 Route::get('/home', [PostController::class, 'index'])->name('post.index');
+Route::get('/faq', [PostController::class, 'faq'])->name('post.faq');
+Route::get('/division', [PostController::class, 'division'])->name('post.division');
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

@@ -7,11 +7,9 @@ import HomePart2 from "@/Components/Home/HomePart2";
 import NewsEvent from "@/Components/Home/NewsEvent";
 import Alert from "@/Components/Alert/Alert";
 import Intro from "@/Components/Home/Intro";
-Intro
-Alert
-NewsEvent
-HomePart2
-Home
+import Homepart3 from "@/Components/Home/HomePart3";
+import { Fade } from "react-reveal";
+
 
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
@@ -24,20 +22,23 @@ export default function Homepage() {
             {showIntro ? (
                 <Intro onIntroEnd={handleIntroEnd} />
             ) : (
+                <Fade>
                 <div>
                     <head title="UMN FESTIVAL"/>
                     <header>
                         <Navbar />
                     </header>
-                    <section className='overflow-hidden'>
+                    <section className='overflow-hidden scroll-smooth'>
                         <Alert></Alert>
                         <Tujuan></Tujuan>
                         <Home></Home>
                         <NewsEvent></NewsEvent>
                         <HomePart2></HomePart2>
+                        <Homepart3></Homepart3>
                         <Footer></Footer>
                     </section>    
-                </div> 
+                </div>
+                </Fade>
             )}
         </>
     );

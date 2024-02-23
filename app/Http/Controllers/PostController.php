@@ -10,4 +10,12 @@ class PostController extends Controller
     public function index(){
         return inertia::render('Posts/Home');
     }
+    public function faq(){
+        return inertia::render('Posts/FAQ');
+    }
+    public function division(){
+        return inertia::render('Posts/Division');
+    }
+    
+    
 }

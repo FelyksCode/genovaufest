@@ -4,6 +4,7 @@ import IonIcon from '@reacticons/ionicons';
 import Trailer from "/public/Images/Trailer.mp4";
 import Carousel from './Carousel'; // Import your Carousel component here
 import { Fade } from 'react-reveal';
+
 Fade
 
 function ImageOne() {
@@ -37,6 +38,7 @@ function ImageOne() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold font-custom">UMN FESTIVAL</h1>
           <p className="text-lg md:text-xl">SHOW YOUR VALOR FIGHT WITH HONOR</p>
+          <IonIcon name='caret-down-outline' className='mt-10 text-[50px] animate-bounce pt-10'></IonIcon>
         </div>  
       </Fade>
       

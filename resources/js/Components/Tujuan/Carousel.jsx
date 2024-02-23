@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
+
     const settings = {
         dots: true,
         infinite: true,
@@ -143,6 +144,7 @@ function Carousel() {
                                 </div>
                             </div>
                         </div>
+                        <div className={`w-[100px] h-[50px] bg-white rounded-3xl`}></div>
                         <div className='card'>
                             <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
                                 <img src="/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png" alt="" className='w-[200px] m-auto' />
@@ -265,6 +267,7 @@ function Carousel() {
                             </div>
                         </div>
                     </Slider>
+        
     </>
   )
 }

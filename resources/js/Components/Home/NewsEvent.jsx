@@ -25,8 +25,8 @@ function NewsEvent() {
                     <Slider {...settings} className='md:w-full mt-6 rounded-xl'>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg1.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg1.jpeg" alt="" className='md:w-[350px] md:h-[500px] w-[300px] h-[400px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
@@ -34,8 +34,8 @@ function NewsEvent() {
                         </div>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg2.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg2.jpeg" alt="" className='md:w-[350px] md:h-[500px] w-[300px] h-[400px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
@@ -43,8 +43,8 @@ function NewsEvent() {
                         </div>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg3.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg3.jpeg" alt="" className='md:w-[350px] md:h-[500px] w-[300px] h-[400px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
@@ -52,8 +52,8 @@ function NewsEvent() {
                         </div>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg4.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg4.jpeg" alt="" className='md:w-[350px] md:h-[500px] w-[300px] h-[400px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
@@ -61,8 +61,8 @@ function NewsEvent() {
                         </div>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg1.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg1.jpeg" alt="" className='md:w-[350px] md:h-[500px] w-[300px] h-[400px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
@@ -70,8 +70,8 @@ function NewsEvent() {
                         </div>
                         <div className='card'>
                             <div className='m-2 rounded-tl-[60px] w-[600px] flex relative justify-center items-center transition ease-in-out hover:scale-110 duration-300 hover:z-10'>
-                                <img src="/Images/NewsEvent/dumbimg2.jpeg" alt="" className='w-[500px] h-[700px] m-auto object-cover'/>
-                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto'>
+                                <img src="/Images/NewsEvent/dumbimg2.jpeg" alt="" className='w-[300px] h-[400px] md:w-[350px] md:h-[500px] m-auto object-cover'/>
+                                <div className='absolute inset-0 flex justify-center items-center text-center font-custom flex-col w-[300px] m-auto bottom-[-40rem] hover:bottom-0 hover:transition-all duration-500 ease-in-out'>
                                     <h3 className='text-[18px] font-bold'>JUDUL BERITA ATAU EVENT</h3>
                                     <p className='text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis aut distinctio velit, libero commodi molestiae in maiores laboriosam harum, culpa possimus aliquid esse, beatae illum nemo dicta. Hic, excepturi.</p>
                                 </div>
