@@ -6,3 +6,13 @@
     font-family: Cinzel;
     src: url(/public/fonts/Cinzel-Regular.ttf) format("truetype");
 }
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+@layer utilities {
+    .collapse {
+    visibility: visible;
+    }
+}

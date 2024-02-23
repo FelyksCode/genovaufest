@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
+
     const settings = {
         dots: true,
         infinite: true,
@@ -12,11 +13,19 @@ function Carousel() {
         slidesToScroll: 3
       };
     var settings2= {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
+        beforeChange: function(currentSlide, nextSlide) {
+        console.log("before change", currentSlide, nextSlide);
+        },
+        afterChange: function(currentSlide) {
+        console.log("after change", currentSlide);
+        }
     };
   return (
     <>
@@ -123,118 +132,142 @@ function Carousel() {
                 </div>
             </Slider>
         </div>
-        <Slider {...settings2} className='m-auto mt-[80px] bottom-10 md:w-[800px]'>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>ALBA</h4>
-                            <h3>Ticketing</h3>
+                    <Slider {...settings2} className='m-auto mt-[80px] bottom-10 md:w-[400px] w-[200px]'>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>ALBA</h4>
+                                        <h3>Ticketing</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>Ardea</h4>
-                            <h3>Perlengkapan</h3>
+                        <div className={`w-[100px] h-[50px] bg-white rounded-3xl`}></div>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>Ardea</h4>
+                                        <h3>Perlengkapan</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>Catania</h4>
-                            <h3>Publikasi</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>Catania</h4>
+                                        <h3>Publikasi</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>Florence</h4>
-                            <h3>Dekorasi</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>Florence</h4>
+                                        <h3>Dekorasi</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/GENOVA - WEBSITE.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>Genova</h4>
-                            <h3>Website</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/GENOVA - WEBSITE.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>Genova</h4>
+                                        <h3>Website</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/LAZIO - KONSUMSI.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>Lazio</h4>
-                            <h3>Konsumsi</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/LAZIO - KONSUMSI.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>Lazio</h4>
+                                        <h3>Konsumsi</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/LEECE - MEDIA PARTNER.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>ALBA</h4>
-                            <h3>Ticketing</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/LEECE - MEDIA PARTNER.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>LEECE</h4>
+                                        <h3>Media Partner</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/MILAN - LOMBA.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>ALBA</h4>
-                            <h3>Ticketing</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/MILAN - LOMBA.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>MILAN</h4>
+                                        <h3>Lomba</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/NAPOLI - DOKUMENTASI.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>ALBA</h4>
-                            <h3>Ticketing</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/NAPOLI - DOKUMENTASI.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>NAPOLI</h4>
+                                        <h3>Dokumentasi</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card'>
-                <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
-                    <img src="/Images/Carousels/Logo_Divisi/PISA - VISUAL.png" alt="" className='w-[200px] m-auto' />
-                    <div className="card-body">
-                        <div className='m-auto text-center font-custom'>
-                            <h4>ALBA</h4>
-                            <h3>Ticketing</h3>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/PISA - VISUAL.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>PISA</h4>
+                                        <h3>Visual</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </Slider>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/ROME - BPH.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>ROME</h4>
+                                        <h3>BPH</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card'>
+                            <div className='mt-20 justify-center items-center transition ease-in-out hover:scale-110 duration-300'>
+                                <img src="/Images/Carousels/Logo_Divisi/TUCANY - ACARA.png" alt="" className='w-[200px] m-auto' />
+                                <div className="card-body">
+                                    <div className='m-auto text-center font-custom'>
+                                        <h4>TUCANY</h4>
+                                        <h3>Acara</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Slider>
+        
     </>
   )
 }
