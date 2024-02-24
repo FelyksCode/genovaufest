@@ -9,14 +9,14 @@ function Navbar() {
         {name:"HOME", link: "/home"},
         {name:"FAQ",link :"/faq"} ,
         {name:"DIVISION",link : "/division"},
-        {name:"CONTACT",link : "#"}
+        {name:"CONTACT",link : "/contactus"}
     ];
     let [open, setOpen]=useState(false);
   return (
-    <div className='shadow-md w-[95%] fixed top-2 left-3 md:left-8 z-10 rounded-full'>
-        <div className="md:flex items-center justify-between bg-slate-100 md:bg-opacity-50 py-4 md:px-10 px-7 rounded-full">
-            <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins text-gray-800] font-custom'>
-                <span className='w-[50px] mr-5 pt-auto'>
+    <div className='shadow-md md:shadow-none w-[95%] fixed top-2 left-3 md:left-8 z-10 rounded-full'>
+        <div className="md:flex items-center justify-between bg-slate-100 md:bg-opacity-0 py-4 md:px-10 px-7 rounded-full">
+            <div className='font-bold text-2xl cursor-pointer flex items-center md:text-white text-gray-600 md:font-[Poppins text-gray-800] font-custom'>
+                <span className='w-[40px] mr-5 pt-auto'>
                     <img src={Logo} alt="ufest logo" />
                 </span>
                 UMN FESTIVAL
@@ -28,7 +28,7 @@ function Navbar() {
                 {
                     Links.map((link)=>(
                         <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7 text-center'>
-                            <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500 font-custom'>{link.name}</a>
+                            <a href={link.link} className='md:text-white text-gray-800 hover:text-gray-600 md:hover:text-gray-400 duration-500 font-custom font-extrabold'>{link.name}</a>
                         </li>
                     ))
                 }

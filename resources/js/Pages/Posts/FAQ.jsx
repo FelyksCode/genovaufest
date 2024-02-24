@@ -1,20 +1,22 @@
 import Accordion from '@/Components/FaQ/Accordion'
 import Navbar from '@/Components/Navbar/Navbar'
-import daisyui from 'daisyui'
-Navbar
 import React from 'react'
-Accordion
-daisyui
+import { Fade } from 'react-reveal'
+
 
 function FAQ() {
   return (
     <>
-      <head title="UMN FESTIVAL"/>
+      <head>
+        <title>UMNFestival</title>
+      </head>
       <header>
           <Navbar />
       </header>
       <section className='scroll-smooth'>
+        <Fade>
           <Accordion></Accordion>
+        </Fade>
       </section>
     </>
   )

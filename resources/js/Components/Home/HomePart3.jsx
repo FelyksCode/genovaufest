@@ -17,7 +17,7 @@ function HomePart3() {
                 className="aspect-[4/1]"
                 >
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <h1 className="text-8xl text-white font-thin">UMN Festival</h1>
+                    <h1 className="md:text-8xl text-lg font-custom font-extrabold text-white">UMN Festival</h1>
                 </div>
             </ParallaxBanner>
         </ParallaxProvider>
