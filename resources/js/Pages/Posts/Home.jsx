@@ -7,9 +7,7 @@ import HomePart2 from "@/Components/Home/HomePart2";
 import NewsEvent from "@/Components/Home/NewsEvent";
 import Alert from "@/Components/Alert/Alert";
 import Intro from "@/Components/Home/Intro";
-import Homepart3 from "@/Components/Home/HomePart3";
 import { Fade } from "react-reveal";
-import SpinnerPart from "@/Components/Home/Spinner";
 
 
 
@@ -53,8 +51,6 @@ export default function Homepage() {
                             <Home></Home>
                             <NewsEvent></NewsEvent>
                             <HomePart2></HomePart2>
-                            <Homepart3></Homepart3>
-                            <SpinnerPart></SpinnerPart>
                             <Footer></Footer>
                         </Fade>
                     </section>      

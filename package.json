@@ -27,6 +27,7 @@
         "parallax-controller": "^1.7.1",
         "preline": "^2.0.3",
         "react-circular-menu": "^2.4.8",
+        "react-fancy-circular-carousel": "^1.0.8",
         "react-native": "^0.73.4",
         "react-parallax": "^3.5.1",
         "react-reveal": "^1.2.2",

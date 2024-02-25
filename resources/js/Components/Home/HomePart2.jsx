@@ -1,18 +1,28 @@
 import React from 'react'
-import  Trailer  from "/public/Images/Trailer_2024.mp4";
 import { Fade } from 'react-reveal';
 Fade
-
+import image1 from '/public/Images/NewsEvent/dumbimg1.jpeg'
+import image2 from '/public/Images/NewsEvent/dumbimg2.jpeg'
+import image3 from '/public/Images/NewsEvent/dumbimg3.jpeg'
 
 function HomePart2() {
+  const logo = [];
+  const images = [image1,image2,image3];
+  const Titles = ['Unveiling', 'Unify', 'ulympic'];
   return (
-    <div className='w-full h-full bg-gray-700 relative'>
-      <div className="relative">
-        <video src={Trailer} autoPlay loop muted className='w-full h-[900px] md:h-full  object-cover object-center filter brightness-50 '></video>
-        <Fade left  duration={4500}>
-          <h1 className='absolute md:top-1/3 top-1/3 md:left-1/3 left-[80px] md:transform md:-translate-x-1/2 -translate-y-1/2 text-white font-custom text-center md:text-right text-[50px] pr-[60px]'>SHOW YOUR VALOR FIGHT WITH HONOR</h1>
-        </Fade>
-      </div>
+    <div className='w-full h-full bg-gray-700'>
+      {images.map((image, index) => 
+          <div key={index} className="relative w-full h-[200px]">
+              <div className='flex justify-center items-center h-full'>
+                  <img src={image} className="object-cover  h-[200px] w-full block duration-300 transition-transform hover:scale-110" />
+                  
+              </div>
+              <div className="inset-0 flex absolute justify-center items-center text-white text-xl font-extrabold bg-black bg-opacity-50 opacity-100 hover:opacity-0 transition-opacity duration-300">
+                  <h1>{Titles[index]}</h1>
+              </div>
+          </div>
+      )}
+        
     </div>
   )
 }
