@@ -1,6 +1,8 @@
 import Accordion from '@/Components/FaQ/Accordion'
+import CoverFaq from '@/Components/FaQ/CoverFaq'
 import Navbar from '@/Components/Navbar/Navbar'
 import React from 'react'
+
 import { Fade } from 'react-reveal'
 
 
@@ -15,6 +17,7 @@ function FAQ() {
       </header>
       <section className='scroll-smooth'>
         <Fade>
+          <CoverFaq></CoverFaq>
           <Accordion></Accordion>
         </Fade>
       </section>

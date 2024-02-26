@@ -16,21 +16,6 @@
     visibility: visible;
     }
 }
-.info-box-wrapper{
-    position:relative;
-    top: -300px;
-    left: 800px;
-    background-color: aquamarine;
-    padding: 10px;
-    width: 200px;
-}
-
-.main{
-    position: absolute;
-    top: 180px;
-    left: 200px;
-	
-}
 
 .news-container {
 	position: relative;
@@ -107,3 +92,4 @@
 	opacity: 1;
 	transition-delay: 400ms;
 }
+

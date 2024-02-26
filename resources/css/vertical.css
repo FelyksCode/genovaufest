@@ -1,0 +1,56 @@
+.swiper {
+	height: 100vh;
+	overflow:visible;
+	max-width: 1000px;
+	margin-left: 700px  !important;
+}
+
+
+.swiper-slide {
+padding-left: 200px;
+transition: 0.5s ease-in-out;
+-webkit-transition: 0.5s ease-in-out;
+-moz-transition: 0.5s ease-in-out;
+-ms-transition: 0.5s ease-in-out;
+-o-transition: 0.5s ease-in-out;
+}
+
+.swiper-slide p {
+    margin-left: 40%;
+}
+
+.swiper-slide img {
+display: flex;
+width: 1000px;
+height: 100%;
+margin-left: 4px;
+object-fit: contain;
+filter: drop-shadow(0 0 0.70rem rgb(155, 95, 95));
+-webkit-filter: drop-shadow(0 0 0.70rem rgb(155, 95, 95));
+}
+
+.swiper-slide-prev {
+transform:  rotate(20deg) translateX(120px) !important;
+-webkit-transform: rotate(20deg) translateX(120px) !important;
+-moz-transform: rotate(20deg) translateX(120px) !important;
+-ms-transform: rotate(20deg) translateX(120px) !important;
+-o-transform: rotate(20deg) translateX(120px) !important;
+}
+
+.swiper-slide-active {
+transform: translateX(-120px) !important;
+-webkit-transform: translateX(-120px) !important;
+-moz-transform: translateX(-120px) !important;
+-ms-transform: translateX(-120px) !important;
+-o-transform: translateX(-120px) !important;
+}
+
+
+.swiper-slide-next {
+transform:  rotate(-20deg) translateX(120px) !important;
+-webkit-transform: rotate(-20deg) translateX(120px) !important;
+-moz-transform: rotate(-20deg) translateX(120px) !important;
+-ms-transform: rotate(-20deg) translateX(120px) !important;
+-o-transform: rotate(-20deg) translateX(120px) !important;
+}
+

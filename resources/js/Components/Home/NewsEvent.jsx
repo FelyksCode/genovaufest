@@ -2,18 +2,8 @@ import React, {useState, useEffect} from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '/resources/css/app.css'
-import {
-    CircleMenu,
-    CircleMenuItem,
-    TooltipPlacement,
-  } from "react-circular-menu";
-function NewsEvent() {
 
-    const [focused, setFocused] = useState(false);
-    const handleClick = () => {
-        // Toggle the focused state when the image is clicked
-        setFocused(!focused);
-      };
+function NewsEvent() {
 
   return (
     <div>
@@ -36,56 +26,6 @@ function NewsEvent() {
                 <div className="box box-5" data-text="Mitsui">
                     <img src="https://i.postimg.cc/nrcWyW4H/img-5.jpg" alt="Mitsui" />
                 </div>
-            </div>
-        </div>
-        <div className='bg-vintage w-full h-[100vh] '>
-            <div className={`mx-[210px] md:mx-[678px] py-[200px] transition-transform duration-500 transform ${focused ? 'translate-x-[-670px]' : 'translate-x-0'}`}>
-                <CircleMenu
-                    startAngle={-90}
-                    rotationAngle={360}
-                    itemSize={4}
-                    radius={14}
-                    rotationAngleInclusive={false}
-                    onClick={handleClick}>
-                    <CircleMenuItem
-                        tooltip="Email"
-                        tooltipPlacement={TooltipPlacement.Right}>
-                            <img src="/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png" alt="" className='m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Help">
-                            <img src="/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Location">
-                            <img src="/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/GENOVA - WEBSITE.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/LAZIO - KONSUMSI.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/LEECE - MEDIA PARTNER.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/MILAN - LOMBA.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/NAPOLI - DOKUMENTASI.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/PISA - VISUAL.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/ROME - BPH.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                    <CircleMenuItem tooltip="Info">
-                            <img src="/Images/Carousels/Logo_Divisi/TUCANY - ACARA.png" alt="" className='w-[200px] m-auto' />
-                    </CircleMenuItem>
-                </CircleMenu>
             </div>
         </div>
     </div>

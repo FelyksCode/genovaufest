@@ -15,9 +15,7 @@ function HomePart1() {
               <img src="/Images/Carousels/text-frame-1.png" alt="" className='m-auto'/>
             </Fade>
         </div>
-        <Fade left duration={3500}>
-            <Carousel></Carousel>
-        </Fade>
+        <Carousel></Carousel>
     </div>
   )
 }
