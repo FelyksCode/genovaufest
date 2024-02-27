@@ -1,10 +1,6 @@
 import React from "react";
-import "/resources/css/vertical.css";
-import slideimg1 from "/public/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png";
-import slideimg2 from "/public/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png";
-import slideimg3 from "/public/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png";
-import slideimg4 from "/public/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+
+// Package
 import "swiper/css";
 import "swiper/css/pagination";
 import {
@@ -14,6 +10,16 @@ import {
     Keyboard,
     Mousewheel,
 } from "swiper/modules";
+
+// Assets
+import slideimg1 from "/public/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png";
+import slideimg2 from "/public/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png";
+import slideimg3 from "/public/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png";
+import slideimg4 from "/public/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// CSS
+import "/resources/css/vertical.css";
 
 function Spinner() {
     const verticalimages = [
