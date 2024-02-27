@@ -1,0 +1,11 @@
+.swiper-slide-active {
+    --tw-blur: blur(0px);
+}
+
+.swiper-slide-prev {
+    --tw-blur: blur(3px);
+}
+
+.swiper-slide-next {
+    --tw-blur: blur(3px);
+}
