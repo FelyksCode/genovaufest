@@ -5,10 +5,11 @@ import '/resources/css/app.css'
 
 function NewsEvent() {
 
+
   return (
     <div>
-        <div className="w-[100%] md:h-[100vh] h-[60vh] flex flex-col justify-center items-center p-0 bg-vintage">
-            <h1 className='text-white text-4xl font-bold mt-8 mb-4'>News & Events</h1>
+        <div className="w-[100%] md:h-[800px] h-[60vh] flex flex-col justify-center items-center p-0 bg-vintage">
+            <h1 className='text-white text-4xl font-bold mt-10 mb-8'>Events</h1>
             <hr className='border-3 border-white w-[300px] md:w-[1000px]' />
             <div className="news-container ">
                 <div className="box box-1" data-text="Renji">

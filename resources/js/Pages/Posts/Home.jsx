@@ -8,6 +8,7 @@ import NewsEvent from "@/Components/Home/NewsEvent";
 import Alert from "@/Components/Alert/Alert";
 import Intro from "@/Components/Home/Intro";
 import { Fade } from "react-reveal";
+import DivisionSpinner from "@/Components/Home/DivisionSpinner";
 
 
 
@@ -48,9 +49,8 @@ export default function Homepage() {
                     </section>  
                     <section className="snap-y snap-mandatory overflow-scroll">
                         <Fade>
-                            <Home></Home>
+                            <DivisionSpinner></DivisionSpinner>
                             <NewsEvent></NewsEvent>
-                            <HomePart2></HomePart2>
                             <Footer></Footer>
                         </Fade>
                     </section>      

@@ -21,8 +21,8 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 1px;
-	height: 500px;
+	gap: 10px;
+	height: 800px;
 	transition: all 400ms;
 }
 

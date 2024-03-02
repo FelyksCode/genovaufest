@@ -41,10 +41,10 @@ function Spinner() {
                     keyboard={{
                         enabled: true,
                     }}
-                    // autoplay={{
-                    //     delay: 5000,
-                    //     disableOnInteraction: false,
-                    // }}
+                    autoplay={{
+                         delay: 5000,
+                         disableOnInteraction: false,
+                    }}
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,

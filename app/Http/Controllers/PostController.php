@@ -20,4 +20,5 @@ class PostController extends Controller
         return inertia::render('Posts/ContactPage');
     }
     
+    
 }
