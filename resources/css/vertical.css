@@ -1,8 +1,12 @@
+.bungkusan {
+    overflow: hidden;
+}
+
 .swiper {
     height: 100vh;
     overflow: visible;
-    max-width: 1000px;
-    margin-left: 700px !important;
+    width: 100vw;
+    margin-left: 50% !important;
 }
 
 .swiper-slide {
@@ -37,13 +41,29 @@
     --tw-blur: blur(3px);
 }
 
-.swiper-slide-active {
-    transform: translateX(-120px) !important;
-    -webkit-transform: translateX(-120px) !important;
-    -moz-transform: translateX(-120px) !important;
-    -ms-transform: translateX(-120px) !important;
-    -o-transform: translateX(-120px) !important;
-    --tw-blur: blur(0px);
+.swiper-slide-prev div {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.swiper-slide-next div {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@media (min-width: 500px) {
+    .swiper-slide-active {
+        transform: translateX(-120px) !important;
+        -webkit-transform: translateX(-120px) !important;
+        -moz-transform: translateX(-120px) !important;
+        -ms-transform: translateX(-120px) !important;
+        -o-transform: translateX(-120px) !important;
+        --tw-blur: blur(0px);
+        div {
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+    }
 }
 
 .swiper-slide-next {

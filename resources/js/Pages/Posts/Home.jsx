@@ -9,8 +9,6 @@ import Alert from "@/Components/Alert/Alert";
 import Intro from "@/Components/Home/Intro";
 import { Fade } from "react-reveal";
 
-
-
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
 
@@ -29,31 +27,30 @@ export default function Homepage() {
         setShowIntro(false);
     };
 
-
     return (
-        <>  
+        <>
             {showIntro ? (
                 <Intro onIntroEnd={handleIntroEnd} />
             ) : (
                 <div>
-                    <head title="UMN FESTIVAL"/>
+                    <head title="UMN FESTIVAL" />
                     <header>
                         <Navbar />
                     </header>
-                    <section className='snap-y overflow-scroll focus:scroll-auto'>
-                            <Alert></Alert>
+                    <section className="snap-y overflow-hidden focus:scroll-auto">
+                        <Alert></Alert>
                         <Fade>
                             <Tujuan></Tujuan>
-                        </Fade>  
-                    </section>  
-                    <section className="snap-y snap-mandatory overflow-scroll">
+                        </Fade>
+                    </section>
+                    <section className="snap-y snap-mandatory overflow-hidden">
                         <Fade>
                             <Home></Home>
                             <NewsEvent></NewsEvent>
                             <HomePart2></HomePart2>
                             <Footer></Footer>
                         </Fade>
-                    </section>      
+                    </section>
                 </div>
             )}
         </>

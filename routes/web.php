@@ -22,6 +22,8 @@ Route::get('/faq', [PostController::class, 'faq'])->name('post.faq');
 Route::get('/division', [PostController::class, 'division'])->name('post.division');
 Route::get('/contactus', [PostController::class, 'contact'])->name('post.contact');
 
+Route::get('/layout', [PostController::class, 'layout'])->name('post.layout');
+
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),

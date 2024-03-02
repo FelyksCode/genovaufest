@@ -19,5 +19,10 @@ class PostController extends Controller
     public function contact(){
         return inertia::render('Posts/ContactPage');
     }
+    public function layout(){
+        return inertia::render('Posts/Layout');
+    }
+
+
     
 }

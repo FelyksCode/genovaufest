@@ -30,7 +30,7 @@ function Spinner() {
     ];
 
     return (
-        <div className="w-full h-[100vh] bg-vintage">
+        <div className="w-full h-[100vh] bg-vintage bungkusan">
             <div className="backdrop-blur-md bg-white/30 w-full h-full flex justify-center items-center">
                 <Swiper
                     spaceBetween={50}
@@ -66,7 +66,7 @@ function Spinner() {
                             className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
                         >
                             <img src={item.image} alt="" />
-                            <div className="bg-white w-[200px] h-[200px] -my-[205px] flex items-center text-center rounded-3xl ml-[120px] transition-transform hover:-translate-x-[200px] translate-x-0 duration-500">
+                            <div className="opacity-0 bg-white w-[200px] h-[200px] -my-[205px] flex items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[500px] -translate-x-[400px] duration-500">
                                 <p className="">{item.Text}</p>
                             </div>
                         </SwiperSlide>
