@@ -1,4 +1,6 @@
 .bungkusan {
+    background-image: url(../../public/Images/website3.jpg);
+    background-size: cover;
     overflow: hidden;
 }
 

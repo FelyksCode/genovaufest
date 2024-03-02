@@ -30,8 +30,8 @@ function Spinner() {
     ];
 
     return (
-        <div className="w-full h-[100vh] bg-divbg bg-cover bungkusan">
-            <div className="backdrop-blur-md bg-white/30 w-full h-full flex justify-center items-center">
+        <div className="w-full h-[100vh] bungkusan">
+            <div className=" bg-white/30 w-full h-full flex justify-center items-center">
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
@@ -42,8 +42,8 @@ function Spinner() {
                         enabled: true,
                     }}
                     autoplay={{
-                         delay: 5000,
-                         disableOnInteraction: false,
+                        delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     pagination={{
                         clickable: true,

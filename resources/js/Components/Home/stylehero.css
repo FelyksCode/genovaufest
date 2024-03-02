@@ -1,14 +1,15 @@
-body {
-    /* overflow: hidden; */
-}
+/* body {
+    overflow: hidden;
+} */
 
 /* style buat hero */
 .pembungkus {
     /* background: src "../../../../public/Images/bghero.jpg"; */
     /* background-position: 100vw 100vh; */
 
-    background-image: url(../../../../public/Images/bghero.jpg);
-    background-size: cover;
+    /* background-image: url(../../../../public/Images/bghero.jpg); */
+    background-image: url(../../../../public/Images/website1.jpg);
+    background-size: 100vw 100vh;
     overflow: hidden;
     /* padding: 20px; */
 }
