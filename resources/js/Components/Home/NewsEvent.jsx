@@ -8,7 +8,7 @@ function NewsEvent() {
 
   return (
     <div>
-        <div className="w-[100%] md:h-[800px] h-[60vh] flex flex-col justify-center items-center p-0 bg-vintage">
+        <div className="w-[100%] md:h-[800px] h-[60vh] flex flex-col justify-center items-center p-0 bg-midbg bg-cover">
             <h1 className='text-white text-4xl font-bold mt-10 mb-8'>Events</h1>
             <hr className='border-3 border-white w-[300px] md:w-[1000px]' />
             <div className="news-container ">

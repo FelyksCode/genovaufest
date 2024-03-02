@@ -30,7 +30,7 @@ function Spinner() {
     ];
 
     return (
-        <div className="w-full h-[100vh] bg-vintage bungkusan">
+        <div className="w-full h-[100vh] bg-divbg bg-cover bungkusan">
             <div className="backdrop-blur-md bg-white/30 w-full h-full flex justify-center items-center">
                 <Swiper
                     spaceBetween={50}
