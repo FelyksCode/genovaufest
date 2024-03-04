@@ -4,7 +4,7 @@ import "react-fancy-circular-carousel/FancyCarousel.css";
 import "./stylehero.css";
 import Info1 from "./Info1";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Slideimg1 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Acara.png";
 import Slideimg2 from "../../../../public/Images/Carousels/LogoDivisi_Baru/BPH.png";
@@ -22,6 +22,9 @@ import Slideimg13 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Webs
 
 const Divisihome = () => {
     const [focusElement, setFocusElement] = useState(0);
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     const images = [
         Slideimg1,
         Slideimg2,
@@ -38,34 +41,43 @@ const Divisihome = () => {
         Slideimg13,
     ];
 
-    // const info = [
-    //     <Info1 />,
-    //     "Mumbai",
-    //     "Bengaluru",
-    //     "Kolkata",
-    //     "gujarat",
-    //     "vadodara",
-    //     "anand",
-    // ];
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const carouselProps =
+        windowWidth <= 500
+            ? {
+                  carouselRadius: 130,
+                  peripheralImageRadius: 28,
+                  centralImageRadius: 60,
+              }
+            : {
+                  carouselRadius: 250,
+                  peripheralImageRadius: 43,
+                  centralImageRadius: 110,
+              };
 
     return (
         <div className="carousel  ">
             <a href="/division">
-                <div className="main  py-[100px] w-screen h-screen pembungkus">
+                <div className="main py-[100px] w-screen h-screen pembungkus">
                     <FancyCarousel
                         images={images}
                         setFocusElement={setFocusElement}
-                        carouselRadius={250}
-                        peripheralImageRadius={43}
-                        centralImageRadius={110}
                         focusElementStyling={{ border: "5px solid #ba4949" }}
                         autoRotateTime={3}
                         borderWidth={4}
                         borderHexColor={"1c364f"}
+                        {...carouselProps} // Spread the conditional props
                     />
-                    {/* <div className="info-box-wrapper">
-                    <p> {info[focusElement]} </p>
-                </div> */}
                 </div>
             </a>
         </div>
