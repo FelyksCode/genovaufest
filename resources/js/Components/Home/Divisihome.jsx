@@ -53,7 +53,7 @@ const Divisihome = () => {
     }, []);
 
     const carouselProps =
-        windowWidth <= 500
+        windowWidth <= 550
             ? {
                   carouselRadius: 130,
                   peripheralImageRadius: 28,
