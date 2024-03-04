@@ -14,7 +14,7 @@ function Division() {
                 <header>
                     <Navbar />
                 </header>
-                <section className="snap-y overflow-scroll focus:scroll-auto">
+                <section className="snap-y overflow-hidden focus:scroll-auto">
                     <Alert></Alert>
                     <Fade>
                         <Spinner></Spinner>

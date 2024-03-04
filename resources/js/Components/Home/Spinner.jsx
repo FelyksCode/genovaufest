@@ -12,10 +12,19 @@ import {
 } from "swiper/modules";
 
 // Assets
-import slideimg1 from "/public/Images/Carousels/Logo_Divisi/ALBA - TICKETING.png";
-import slideimg2 from "/public/Images/Carousels/Logo_Divisi/ARDEA - PERLENGKAPAN.png";
-import slideimg3 from "/public/Images/Carousels/Logo_Divisi/CATANIA - PUBLIKASI.png";
-import slideimg4 from "/public/Images/Carousels/Logo_Divisi/FLORENCE - DEKORASI.png";
+import Slideimg1 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Acara.png";
+import Slideimg2 from "../../../../public/Images/Carousels/LogoDivisi_Baru/BPH.png";
+import Slideimg3 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dekorasi.png";
+import Slideimg4 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dokumentasi.png";
+import Slideimg5 from "../../../../public/Images/Carousels/LogoDivisi_Baru/FreshMoney.png";
+import Slideimg6 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Konsumsi.png";
+import Slideimg7 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Lomba.png";
+import Slideimg8 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Perlengkapan.png";
+import Slideimg9 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Publikasi.png";
+import Slideimg10 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Sponsor.png";
+import Slideimg11 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Ticketing.png";
+import Slideimg12 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Visual.png";
+import Slideimg13 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Website.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // CSS
@@ -23,17 +32,26 @@ import "/resources/css/vertical.css";
 
 function Spinner() {
     const verticalimages = [
-        { image: slideimg1, Text: "Text1" },
-        { image: slideimg2, Text: "Text2" },
-        { image: slideimg3, Text: "Text3" },
-        { image: slideimg4, Text: "Text4" },
+        { image: Slideimg1, Text: "Text1" },
+        { image: Slideimg2, Text: "Text2" },
+        { image: Slideimg3, Text: "Text3" },
+        { image: Slideimg4, Text: "Text4" },
+        { image: Slideimg5, Text: "Text5" },
+        { image: Slideimg6, Text: "Text6" },
+        { image: Slideimg7, Text: "Text7" },
+        { image: Slideimg8, Text: "Text8" },
+        { image: Slideimg9, Text: "Text9" },
+        { image: Slideimg10, Text: "Text10" },
+        { image: Slideimg11, Text: "Text11" },
+        { image: Slideimg12, Text: "Text12" },
+        { image: Slideimg13, Text: "Text13" },
     ];
 
     return (
         <div className="w-full h-[100vh] bungkusan">
             <div className=" bg-white/30 w-full h-full flex justify-center items-center">
                 <Swiper
-                    spaceBetween={50}
+                    spaceBetween={0}
                     slidesPerView={3}
                     direction="vertical"
                     navigation={true}
@@ -41,14 +59,17 @@ function Spinner() {
                     keyboard={{
                         enabled: true,
                     }}
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    //     delay: 3000,
+                    //     disableOnInteraction: false,
+                    // }}
+
+                    autoplay={false}
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,
                     }}
+                    // pagination={false}
                     centeredSlides={true}
                     loop="true"
                     modules={[
@@ -66,7 +87,11 @@ function Spinner() {
                             className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
                         >
                             <img src={item.image} alt="" />
-                            <div className="opacity-0 bg-white w-[200px] h-[200px] -my-[205px] flex items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[500px] -translate-x-[400px] duration-500">
+                            <div
+                                className="opacity-0 bg-white w-[300px] h-[300px] -my-[205px] flex 
+                            items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[-500px] 
+                            -translate-x-[-400px] duration-500"
+                            >
                                 <p className="">{item.Text}</p>
                             </div>
                         </SwiperSlide>
