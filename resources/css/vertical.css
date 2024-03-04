@@ -8,11 +8,11 @@
     height: 100vh;
     overflow: visible;
     width: 100vw;
-    margin-left: 50% !important;
+    margin-right: 70% !important;
 }
 
 .swiper-slide {
-    padding-left: 200px;
+    padding-right: 100px;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -21,26 +21,45 @@
 }
 
 .swiper-slide p {
-    margin-left: 40%;
+    margin: auto;
 }
 
 .swiper-slide img {
     display: flex;
     width: 1000px;
     height: 100%;
-    margin-left: 4px;
+    margin-right: 4px;
     object-fit: contain;
     filter: drop-shadow(0 0 0.7rem rgb(155, 95, 95));
     -webkit-filter: drop-shadow(0 0 0.7rem rgb(155, 95, 95));
 }
 
+.swiper-slide-prev img {
+    height: 70%;
+}
+
+.swiper-slide-next img {
+    height: 70%;
+}
+
 .swiper-slide-prev {
-    transform: rotate(20deg) translateX(120px) !important;
-    -webkit-transform: rotate(20deg) translateX(120px) !important;
-    -moz-transform: rotate(20deg) translateX(120px) !important;
-    -ms-transform: rotate(20deg) translateX(120px) !important;
-    -o-transform: rotate(20deg) translateX(120px) !important;
-    --tw-blur: blur(3px);
+    transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    -webkit-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    -moz-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    -ms-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    -o-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    --tw-blur: blur(1px);
+    margin-bottom: 10px;
+}
+
+.swiper-slide-next {
+    margin-top: 50px;
+    transform: rotate(10deg) translateX(-60px) !important;
+    -webkit-transform: rotate(10deg) translateX(-60px) !important;
+    -moz-transform: rotate(10deg) translateX(-60px) !important;
+    -ms-transform: rotate(10deg) translateX(-60px) !important;
+    -o-transform: rotate(10deg) translateX(-60px) !important;
+    --tw-blur: blur(1px);
 }
 
 .swiper-slide-prev div {
@@ -55,11 +74,11 @@
 
 @media (min-width: 500px) {
     .swiper-slide-active {
-        transform: translateX(-120px) !important;
-        -webkit-transform: translateX(-120px) !important;
-        -moz-transform: translateX(-120px) !important;
-        -ms-transform: translateX(-120px) !important;
-        -o-transform: translateX(-120px) !important;
+        transform: translateX(120px) !important;
+        -webkit-transform: translateX(120px) !important;
+        -moz-transform: translateX(120px) !important;
+        -ms-transform: translateX(120px) !important;
+        -o-transform: translateX(120px) !important;
         --tw-blur: blur(0px);
         div {
             opacity: 1;
@@ -68,11 +87,10 @@
     }
 }
 
-.swiper-slide-next {
-    transform: rotate(-20deg) translateX(120px) !important;
-    -webkit-transform: rotate(-20deg) translateX(120px) !important;
-    -moz-transform: rotate(-20deg) translateX(120px) !important;
-    -ms-transform: rotate(-20deg) translateX(120px) !important;
-    -o-transform: rotate(-20deg) translateX(120px) !important;
-    --tw-blur: blur(3px);
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+    right: var(--swiper-pagination-right, 8px);
+    left: 10px;
+    top: 50%;
+    transform: translate3d(0px, -50%, 0);
 }
