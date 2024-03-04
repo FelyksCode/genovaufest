@@ -92,7 +92,7 @@
     right: var(--swiper-pagination-right, 8px);
     left: 10px;
     @media (min-width: 500px) {
-        margin-left: 20%;
+        margin-left: 25%;
     }
     margin-left: 35%;
     top: 50%;
