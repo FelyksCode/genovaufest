@@ -40,7 +40,7 @@ function DivisionSpinner() {
     ]
     return (
     <>
-        <div className="w-[100%] h-[100vh] flex justify-center items-center bg-gradient-to-b from-black from-1% to-vintage to-30%">
+        <div className="w-[100%] h-[100vh] flex justify-center items-center bg-herobg bg-cover">
             <CircleMenu
                 startAngle={-90}
                 rotationAngle={360}

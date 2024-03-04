@@ -26,7 +26,9 @@ export default {
             },
 
             backgroundImage: {
-                'Crack': "url('/public/Images/crackWall.png')" 
+                herobg: "url('/Images/Bgimage/websitebg1.png')" ,
+                midbg: "url('/Images/Bgimage/websitebg2.png')" ,
+                divbg: "url('/Images/Bgimage/websitebg3.png')" 
             }
         },
     },
