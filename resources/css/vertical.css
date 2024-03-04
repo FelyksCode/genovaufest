@@ -21,7 +21,15 @@
 }
 
 .swiper-slide p {
-    margin: auto;
+    /* margin: auto; */
+}
+
+.infodivisi {
+    display: list-item;
+}
+
+.juduldivisi h1 {
+    font-size: 7rem;
 }
 
 .swiper-slide img {
@@ -82,7 +90,7 @@
         --tw-blur: blur(0px);
         div {
             opacity: 1;
-            transition: opacity 0.4s ease;
+            transition: opacity 1s ease-in;
         }
     }
 }

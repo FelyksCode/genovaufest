@@ -32,19 +32,71 @@ import "/resources/css/vertical.css";
 
 function Spinner() {
     const verticalimages = [
-        { image: Slideimg1, Text: "Text1" },
-        { image: Slideimg2, Text: "Text2" },
-        { image: Slideimg3, Text: "Text3" },
-        { image: Slideimg4, Text: "Text4" },
-        { image: Slideimg5, Text: "Text5" },
-        { image: Slideimg6, Text: "Text6" },
-        { image: Slideimg7, Text: "Text7" },
-        { image: Slideimg8, Text: "Text8" },
-        { image: Slideimg9, Text: "Text9" },
-        { image: Slideimg10, Text: "Text10" },
-        { image: Slideimg11, Text: "Text11" },
-        { image: Slideimg12, Text: "Text12" },
-        { image: Slideimg13, Text: "Text13" },
+        {
+            image: Slideimg1,
+            Judul: "Acara",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg2,
+            Judul: "BPH",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg3,
+            Judul: "Dekorasi",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg4,
+            Judul: "Dokum",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg5,
+            Judul: "FM",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg6,
+            Judul: "Konsum",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg7,
+            Judul: "Lomba",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg8,
+            Judul: "Perkap",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg9,
+            Judul: "Publi",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg10,
+            Judul: "Sponsor",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg11,
+            Judul: "Ticketing",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg12,
+            Judul: "Visu",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
+        {
+            image: Slideimg13,
+            Judul: "Website",
+            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+        },
     ];
 
     return (
@@ -88,11 +140,16 @@ function Spinner() {
                         >
                             <img src={item.image} alt="" />
                             <div
-                                className="opacity-0 bg-white w-[900px] h-[600px] -mx-[290px] -my-[405px] flex 
+                                className="opacity-0 bg-white w-[900px] h-[400px] -mx-[290px] -my-[305px] flex 
                             items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[-500px] 
-                            -translate-x-[-400px] duration-500 w-full "
+                            -translate-x-[-400px] duration-500 w-full infodivisi"
                             >
-                                <p className="">{item.Text}</p>
+                                <div className="juduldivisi w-full">
+                                    <h1 className="">{item.Judul}</h1>
+                                </div>
+                                <div className="artidivisi w-full">
+                                    <p className="">{item.Text}</p>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}
