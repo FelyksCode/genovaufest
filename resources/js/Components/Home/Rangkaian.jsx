@@ -71,11 +71,14 @@ function Rangkaian() {
 
     const Card = ({ card }) => (
         <a href={card.href} target="_blank" className="card">
-            <div className="wrapper">
+            <div className="wrapper flex place-self-center ">
                 <img src={card.coverImage} className="cover-image" />
             </div>
             <img src={card.titleImage} className="title" />
-            <img src={card.characterImage} className="character" />
+            <img
+                src={card.characterImage}
+                className="character flex place-self-center"
+            />
         </a>
     );
 
@@ -87,7 +90,7 @@ function Rangkaian() {
                     <Swiper
                         modules={[Autoplay]}
                         className="mySwiper"
-                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        // autoplay={{ delay: 2500, disableOnInteraction: false }}
                     >
                         {cards.map((card, index) => (
                             <SwiperSlide key={index}>
