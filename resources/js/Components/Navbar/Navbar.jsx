@@ -9,7 +9,7 @@ function Navbar() {
         {name:"HOME", link: "/home"},
         {name:"FAQ",link :"/faq"} ,
         {name:"DIVISION",link : "/division"},
-        {name:"CONTACT",link : "/contactus"}
+        {name:"MAP",link : "/map"}
     ];
     let [open, setOpen]=useState(false);
   return (

@@ -1,5 +1,5 @@
 import Alert from '@/Components/Alert/Alert'
-import ContactSection from '@/Components/Contact/ContactSection'
+import MapPage from '@/Components/Maps/Maps'
 import Navbar from '@/Components/Navbar/Navbar'
 import React from 'react'
 import { Fade } from 'react-reveal'
@@ -16,7 +16,7 @@ function ContactPage() {
             <section className='snap-y overflow-scroll focus:scroll-auto'>
                     <Alert></Alert>
                 <Fade>
-                    <ContactSection></ContactSection>
+                    <MapPage></MapPage>
                 </Fade>  
             </section>     
         </div>

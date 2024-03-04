@@ -16,8 +16,8 @@ class PostController extends Controller
     public function division(){
         return inertia::render('Posts/Division');
     }
-    public function contact(){
-        return inertia::render('Posts/ContactPage');
+    public function map(){
+        return inertia::render('Posts/MapPage');
     }
     public function layout(){
         return inertia::render('Posts/Layout');
