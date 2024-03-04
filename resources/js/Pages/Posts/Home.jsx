@@ -9,6 +9,11 @@ import Alert from "@/Components/Alert/Alert";
 import Intro from "@/Components/Home/Intro";
 import { Fade } from "react-reveal";
 import DivisionSpinner from "@/Components/Home/DivisionSpinner";
+import Rangkaian from "@/Components/Home/Rangkaian";
+import FindMore from "@/Components/Home/FindMore";
+import Divisihome from "@/Components/Home/Divisihome";
+
+
 
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
@@ -44,10 +49,11 @@ export default function Homepage() {
                             <Tujuan></Tujuan>
                         </Fade>
                     </section>
-                    <section className="snap-y snap-mandatory overflow-hidden">
+                    <section className="snap-y snap-mandatory overflow-hidden ">
                         <Fade>
-                            <DivisionSpinner></DivisionSpinner>
-                            <NewsEvent></NewsEvent>
+                            <Divisihome></Divisihome>
+                            <Rangkaian></Rangkaian>
+                            <FindMore></FindMore>
                             <Footer></Footer>
                         </Fade>
                     </section>
