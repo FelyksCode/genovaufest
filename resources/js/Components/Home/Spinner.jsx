@@ -88,7 +88,7 @@ function Spinner() {
                         >
                             <img src={item.image} alt="" />
                             <div
-                                className="opacity-0 bg-white w-[800px] h-[300px] -mx-[290px] -my-[275px] flex 
+                                className="opacity-0 bg-white w-[900px] h-[600px] -mx-[290px] -my-[405px] flex 
                             items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[-500px] 
                             -translate-x-[-400px] duration-500 w-full "
                             >
