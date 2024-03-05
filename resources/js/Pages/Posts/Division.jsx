@@ -1,16 +1,16 @@
 import Alert from "@/Components/Alert/Alert";
 import Spinner from "@/Components/Home/Spinner";
 import Navbar from "@/Components/Navbar/Navbar";
+import { Head } from "@inertiajs/react";
 import React from "react";
 import { Fade } from "react-reveal";
-Alert;
-Navbar;
+
 
 function Division() {
     return (
         <>
             <div>
-                <head title="UMN FESTIVAL" />
+                <Head title="Divisi" />
                 <header>
                     <Navbar />
                 </header>

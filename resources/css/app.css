@@ -93,3 +93,7 @@
 	transition-delay: 400ms;
 }
 
+.blend-overlay {
+	mix-blend-mode: screen;
+	opacity: 50%;
+}
