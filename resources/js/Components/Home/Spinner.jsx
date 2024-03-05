@@ -12,8 +12,8 @@ import {
 } from "swiper/modules";
 
 // Assets
-import Slideimg1 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Acara.png";
-import Slideimg2 from "../../../../public/Images/Carousels/LogoDivisi_Baru/BPH.png";
+import Slideimg1 from "../../../../public/Images/Carousels/LogoDivisi_Baru/BPH.png";
+import Slideimg2 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Acara.png";
 import Slideimg3 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dekorasi.png";
 import Slideimg4 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dokumentasi.png";
 import Slideimg5 from "../../../../public/Images/Carousels/LogoDivisi_Baru/FreshMoney.png";
@@ -34,68 +34,68 @@ function Spinner() {
     const verticalimages = [
         {
             image: Slideimg1,
-            Judul: "Acara",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Rome (BPH)",
+            Text: "Pusat ibu kota di Italia. menjadi destinasi utama para turis saat berkunjung. Divisi BPH menjadi pusat utama informasi acara dan divisi lainnya.",
         },
         {
             image: Slideimg2,
-            Judul: "BPH",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Tuscany (Acara)",
+            Text: "Kota Tuscany dikenal sebagai kota pusat inovasi di masa Renaissance. Divisi acara menjadi pusat inovasi dalam acara ini.",
         },
         {
             image: Slideimg3,
-            Judul: "Dekorasi",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Florence (Dekorasi)",
+            Text: "Kota Florence dikenal sebagai kota terindah di Italia karena warisan budaya, arsitektur, dan seni yang sangat menakjubkan. Seperti Florence yang dipenuhi dengan keindahan, divisi Dekorasi akan membantu memperindah venue-venue yang akan digunakan oleh UMN Festival 2024.",
         },
         {
             image: Slideimg4,
-            Judul: "Dokum",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Napoli (Documentation)",
+            Text: "Kota Napoli dikenal dengan perpaduan nuansa kuno dan modern. Napoli menjadi kota dengan seni, arsitektur, dan peninggalan arkeologi yang menarik banyak turis untuk berfoto. Divisi dokumentasi memiliki tugas dalam mengabdikan banyak momen acara.",
         },
         {
             image: Slideimg5,
-            Judul: "FM",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Venezia (Fresh Money)",
+            Text: "Kota Venezia merupakan kota yang terkenal karena aspek perdagangan dan pariwisata. Maka dari itu, Venezia memiliki pemasukan ekonomi yang besar bagi Italia. Seperti Venezia, divisi Fresh Money akan mendukung UMN Festival 2024 dengan berbagai kegiatan wirausaha.",
         },
         {
             image: Slideimg6,
-            Judul: "Konsum",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Lazio (Konsumsi)",
+            Text: "Kota Lazio dikenal sebagai kota yang menemukan banyak macam pasta yang kita kenal hingga saat ini. Seperti Lazio yang menyediakan makanan bagi para penduduknya, divisi Konsumsi juga akan menyediakan makanan bagi seluruh panitia.",
         },
         {
             image: Slideimg7,
-            Judul: "Lomba",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Milan (Lomba)",
+            Text: "Kota Milan yang terkenal dengan pusat sepak bola di Italia yaitu AC Milan. Terdapat banyak kompetisi yang berlangsung di kota tersebut khususnya sepak bola.",
         },
         {
             image: Slideimg8,
-            Judul: "Perkap",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Ardea (Perlengkapan)",
+            Text: "Kota Ardea terkenal dengan tempat wisata yang beragam seperti pantai, hotel, destinasi, dan makanannya. Divisi perlengkapan siap menyediakan kebutuhan yang diperlukan, sama halnya dengan kota Ardea yang lengkap akan destinasi wisata.",
         },
         {
             image: Slideimg9,
-            Judul: "Publi",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Catania (Publication)",
+            Text: "Catania merupakan kota terbesar kedua di Sisilia, Italia. menjadikannya sebagai kota terpadat kedua di pulau tersebut. Divisi publikasi yang menarik banyak partisipan.",
         },
         {
             image: Slideimg10,
-            Judul: "Sponsor",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Turin (Sponsorship)",
+            Text: "Kota Turin dikenal sebagai salah satu kota dengan pemasukan ekonomi terbesar di Italia karena merupakan pusat dari industri otomotif. Seperti Turin, divisi Sponsorship juga merupakan divisi yang bertugas untuk mencari pemasukan dana.",
         },
         {
             image: Slideimg11,
-            Judul: "Ticketing",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Alba (Ticketing) ",
+            Text: "Kota Alba dikenal sebagai kota administrasi di Italia. Divisi ticketing yang bertanggung jawab atas administrasi tiket ufest.",
         },
         {
             image: Slideimg12,
-            Judul: "Visu",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Pisa (Visual)",
+            Text: "Kota Pisa dikenal sebagai kota yang memiliki banyak destinasi wisata yang berhubungan desain seperti desain arsitektur dan museum lukisan. Seperti kota Pisa yang dipenuhi dengan kreativitas, divisi Visual akan memenuhi kebutuhan kreatif dari acara ini.",
         },
         {
             image: Slideimg13,
-            Judul: "Website",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dolor metus. Nam quis dictum orci, vitae pretium ipsum. Vestibulum dignissim tortor et arcu efficitur laoreet. Duis maximus nunc nec iaculis molestie. Nunc a nisl quis quam facilisis maximus. Cras eget massa ornare ex maximus dapibus. Phasellus pharetra sapien ac lectus posuere pellentesque. Suspendisse euismod semper vulputate. Phasellus vel purus blandit, sodales tortor volutpat, finibus est. Nunc efficitur, lorem a suscipit aliquam, orci augue blandit tortor, in facilisis leo arcu a velit. Donec feugiat odio in quam fermentum, nec bibendum dui vestibulum. Quisque cursus accumsan odio id efficitur. Duis sed quam feugiat, pulvinar sapien et, facilisis nibh. Donec porttitor lectus massa. ",
+            Judul: "Genova (Website)",
+            Text: "Kota Genova dikenal sebagai pusat ekonomi industri, contohnya seperti baja. Genova, Italia menjadi kota perkembangan yang lebih berteknologi maju dan ramah lingkungan.",
         },
     ];
 
@@ -140,9 +140,9 @@ function Spinner() {
                         >
                             <img src={item.image} alt="" />
                             <div
-                                className="opacity-0 bg-white w-[900px] h-[400px] -mx-[290px] -my-[305px] flex 
+                                className="opacity-0 bg-white/50 w-[900px] h-[200px] -mx-[290px] -my-[230px] flex 
                             items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[-500px] 
-                            -translate-x-[-400px] duration-500 w-full infodivisi"
+                            -translate-x-[-400px] duration-500  infodivisi"
                             >
                                 <div className="juduldivisi w-full">
                                     <h1 className="">{item.Judul}</h1>
