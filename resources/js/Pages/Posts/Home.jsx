@@ -12,6 +12,8 @@ import DivisionSpinner from "@/Components/Home/DivisionSpinner";
 import Rangkaian from "@/Components/Home/Rangkaian";
 import FindMore from "@/Components/Home/FindMore";
 import Divisihome from "@/Components/Home/Divisihome";
+import { Head } from "@inertiajs/react";
+
 
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
@@ -37,8 +39,8 @@ export default function Homepage() {
                 <Intro onIntroEnd={handleIntroEnd} />
             ) : (
                 <div>
-                    <head title="UMN FESTIVAL" />
-                    <header>
+                    <Head title="Home" />
+                    <header title='UMN FESTIVAL'>
                         <Navbar />
                     </header>
                     <section className="snap-y overflow-hidden focus:scroll-auto">

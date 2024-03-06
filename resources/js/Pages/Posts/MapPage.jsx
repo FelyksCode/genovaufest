@@ -1,27 +1,41 @@
 import Alert from '@/Components/Alert/Alert'
 import MapPage from '@/Components/Maps/Maps'
+import MapsReact from '@/Components/Maps/MapsReact'
 import Navbar from '@/Components/Navbar/Navbar'
-import React from 'react'
+import { Head } from '@inertiajs/react'
+import React, { useEffect, useState } from 'react'
 import { Fade } from 'react-reveal'
 
 
-function ContactPage() {
+function MapPages() {
+  const [showMapPage, setShowMapPage] = useState(true);
+
+  useEffect(() => {
+    const hasShownMapPage = sessionStorage.getItem('hasShownMapPage');
+    if (hasShownMapPage) {
+      setShowMapPage(false);
+    } else {
+      sessionStorage.setItem('hasShownMapPage', true);
+    }
+  }, []);
+  
   return (
     <>
-        <div>
-            <head title="UMN FESTIVAL"/>
-            <header>
-                <Navbar />
-            </header>
-            <section className='snap-y overflow-scroll focus:scroll-auto'>
-                    <Alert></Alert>
-                <Fade>
-                    <MapPage></MapPage>
-                </Fade>  
-            </section>     
-        </div>
+        <Head title="Map Events" />
+        <header>
+          <Navbar />
+        </header>
+        <section className='snap-y overflow-scroll focus:scroll-auto'>
+          <Alert></Alert>
+          <MapsReact></MapsReact>
+          {showMapPage && (
+            <Fade>
+              <MapPage></MapPage>
+            </Fade>
+          )}
+        </section>     
     </>
   )
 }
 
-export default ContactPage
+export default MapPages

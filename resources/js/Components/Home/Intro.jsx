@@ -31,14 +31,13 @@ function Intro({ onIntroEnd }) {
 
   return (
     <div className={`fixed top-0 left-0 w-full h-full overflow-hidden z-50 flex justify-center items-center bg-black transition-opacity ${showIntro ? 'opacity-100 transition-opacity duration-100 ease-in' : 'opacity-0'}`}>
-      {/* Video */}
       <Fade>
           <video
             className={`w-full h-full object-cover ${videoPlayed ? 'block' : 'hidden'} `}
             autoPlay
             muted
             onEnded={handleVideoEnd}
-            onPlay={() => setVideoPlayed(true)} // Set videoPlayed to true when video starts playing
+            onPlay={() => setVideoPlayed(true)}
           >
             <source src="/Images/introWebsite.mp4" type="video/mp4" />
             Your browser does not support the video tag.

@@ -28,7 +28,8 @@ export default {
             backgroundImage: {
                 herobg: "url('/Images/Bgimage/websitebg1.png')" ,
                 midbg: "url('/Images/Bgimage/websitebg2.png')" ,
-                divbg: "url('/Images/Bgimage/websitebg3.png')" 
+                divbg: "url('/Images/Bgimage/websitebg3.png')" ,
+                maps: "url('/Images/Bgimage/MapsUfestTXT.png')"
             }
         },
     },
