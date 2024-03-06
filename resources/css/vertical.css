@@ -15,7 +15,7 @@
     height: 100vh;
     overflow: visible;
     width: 100vw;
-    margin-right: 70% !important;
+    margin-right: 30% !important;
 }
 
 .swiper-slide {
@@ -34,6 +34,11 @@
 
 .infodivisi {
     display: list-item;
+    width: calc(100vw - 70%);
+    height: fit-content;
+    z-index: 10;
+    /* margin-left: calc(50vw - 90%); */
+    overflow: visible;
 }
 
 .juduldivisi h1 {
@@ -41,9 +46,9 @@
     font-size: 3rem;
 }
 
-.swiper-slide img {
+.swiper-slide .bungkusimg {
     display: flex;
-    width: 1000px;
+    width: fit-content;
     height: 100%;
     margin-right: 4px;
     object-fit: contain;
@@ -51,42 +56,54 @@
     -webkit-filter: drop-shadow(0 0 0.7rem rgb(155, 95, 95));
 }
 
-.swiper-slide-prev img {
+.swiper-slide-prev .bungkusimg {
     height: 70%;
 }
 
-.swiper-slide-next img {
+.swiper-slide-next .bungkusimg {
     height: 70%;
 }
 
 .swiper-slide-prev {
-    transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
-    -webkit-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
-    -moz-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
-    -ms-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
-    -o-transform: rotate(-20deg) translateX(-60px) translateY(15px) !important;
+    transform: rotate(-20deg) translateX(-40px) translateY(-105px) !important;
+    -webkit-transform: rotate(-20deg) translateX(-40px) translateY(-105px) !important;
+    -moz-transform: rotate(-20deg) translateX(-40px) translateY(-105px) !important;
+    -ms-transform: rotate(-20deg) translateX(-40px) translateY(-105px) !important;
+    -o-transform: rotate(-20deg) translateX(-40px) translateY(-105px) !important;
     --tw-blur: blur(1px);
     margin-bottom: 10px;
 }
 
 .swiper-slide-next {
     margin-top: 50px;
-    transform: rotate(10deg) translateX(-60px) !important;
-    -webkit-transform: rotate(10deg) translateX(-60px) !important;
-    -moz-transform: rotate(10deg) translateX(-60px) !important;
-    -ms-transform: rotate(10deg) translateX(-60px) !important;
-    -o-transform: rotate(10deg) translateX(-60px) !important;
+    transform: rotate(10deg) translateX(-60px) translateY(70px) !important;
+    -webkit-transform: rotate(10deg) translateX(-60px) translateY(70px) !important;
+    -moz-transform: rotate(10deg) translateX(-60px) translateY(70px) !important;
+    -ms-transform: rotate(10deg) translateX(-60px) translateY(70px) !important;
+    -o-transform: rotate(10deg) translateX(-60px) translateY(70px) !important;
     --tw-blur: blur(1px);
 }
 
-.swiper-slide-prev div {
+.swiper-slide-prev .infodivisi {
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
-.swiper-slide-next div {
+.swiper-slide-next .infodivisi {
     opacity: 0;
     transition: opacity 0.4s ease;
+}
+
+@media screen and (min-width: 904px) and (max-width: 1156px) {
+    .swiper {
+        margin-right: 20% !important;
+    }
+}
+
+@media (max-width: 903px) {
+    .swiper {
+        margin-right: 10% !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -136,7 +153,7 @@
     right: var(--swiper-pagination-right, 8px);
     left: 10px;
     @media (min-width: 500px) {
-        margin-left: 25%;
+        margin-left: 5%;
     }
     @media (max-width: 499px) {
         /* left: 0px; */

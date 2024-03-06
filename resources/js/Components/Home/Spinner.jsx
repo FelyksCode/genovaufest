@@ -138,12 +138,16 @@ function Spinner() {
                             key={index}
                             className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
                         >
-                            <img src={item.image} alt="" />
-                            <div className="opacity-0 bg-white/70 infodivisi">
-                                <div className="juduldivisi w-full">
-                                    <h1 className="">{item.Judul}</h1>
+                            <div className="bungkusimg">
+                                <img src={item.image} alt="Divison" />
+                            </div>
+                            <div className="opacity-0 bg-white/70 infodivisi p-5 rounded-2xl">
+                                <div className="juduldivisi">
+                                    <h1 className="text-center">
+                                        {item.Judul}
+                                    </h1>
                                 </div>
-                                <div className="artidivisi w-full">
+                                <div className="artidivisi">
                                     <p className="text-center">{item.Text}</p>
                                 </div>
                             </div>
