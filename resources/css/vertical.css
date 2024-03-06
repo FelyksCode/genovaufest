@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Title"; /* Specify the desired font-family name */
+    src: url("../../public/fonts/akbaal/akbaal.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .bungkusan {
     background-image: url(../../public/Images/website3.jpg);
     background-size: cover;
@@ -12,6 +19,7 @@
 }
 
 .swiper-slide {
+    display: flex;
     padding-right: 100px;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
@@ -29,6 +37,7 @@
 }
 
 .juduldivisi h1 {
+    font-family: Title;
     font-size: 3rem;
 }
 
@@ -80,6 +89,30 @@
     transition: opacity 0.4s ease;
 }
 
+@media (max-width: 500px) {
+    .infodivisi {
+        /* w-[200px] sm:w-[500px] lg:w-[900px] */
+    }
+
+    .swiper {
+        margin-right: 30% !important;
+    }
+
+    .swiper-slide img {
+        width: 500px;
+        height: 100%;
+    }
+
+    .swiper-slide p {
+        /* margin: auto; */
+    }
+
+    .juduldivisi h1 {
+        font-family: Title;
+        font-size: 1rem;
+    }
+}
+
 @media (min-width: 500px) {
     .swiper-slide-active {
         transform: translateX(120px) !important;
@@ -87,11 +120,14 @@
         -moz-transform: translateX(120px) !important;
         -ms-transform: translateX(120px) !important;
         -o-transform: translateX(120px) !important;
-        --tw-blur: blur(0px);
-        div {
-            opacity: 1;
-            transition: opacity 0.7s ease-in;
-        }
+    }
+}
+
+.swiper-slide-active {
+    --tw-blur: blur(0px);
+    div {
+        opacity: 1;
+        transition: opacity 0.7s ease-in;
     }
 }
 
@@ -102,7 +138,10 @@
     @media (min-width: 500px) {
         margin-left: 25%;
     }
-    margin-left: 35%;
+    @media (max-width: 499px) {
+        /* left: 0px; */
+        margin-left: 5%;
+    }
     top: 50%;
     transform: translate3d(0px, -50%, 0);
 }

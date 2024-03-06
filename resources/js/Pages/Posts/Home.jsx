@@ -13,8 +13,6 @@ import Rangkaian from "@/Components/Home/Rangkaian";
 import FindMore from "@/Components/Home/FindMore";
 import Divisihome from "@/Components/Home/Divisihome";
 
-
-
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
 
@@ -52,8 +50,9 @@ export default function Homepage() {
                     <section className="snap-y snap-mandatory overflow-hidden ">
                         <Fade>
                             <Divisihome></Divisihome>
+                            {/* <HomePart2></HomePart2> */}
                             <Rangkaian></Rangkaian>
-                            <FindMore></FindMore>
+                            {/* <FindMore></FindMore> */}
                             <Footer></Footer>
                         </Fade>
                     </section>
