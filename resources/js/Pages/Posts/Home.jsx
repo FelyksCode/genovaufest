@@ -47,7 +47,7 @@ export default function Homepage() {
                     </header>
                     <section className="snap-y overflow-hidden focus:scroll-auto">
                         <Alert></Alert>
-                        <Fade>
+                        <Fade duration={100}>
                             <Tujuan></Tujuan>
                         </Fade>
                     </section>

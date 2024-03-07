@@ -6,25 +6,21 @@ function Intro({ onIntroEnd }) {
   const [videoPlayed, setVideoPlayed] = useState(false);
   const [showIntro, setShowIntro] = useState(true);
 
-  // Function to handle video end
   const handleVideoEnd = () => {
-    // Call the onIntroEnd function passed from App.js
     onIntroEnd();
   };
 
-  // Function to handle play button click
+
   const handlePlayButtonClick = () => {
     setVideoPlayed(true);
   };
 
   useEffect(() => {
-    // After the intro video is played, start the fade-out animation
     if (videoPlayed) {
       const fadeOutTimer = setTimeout(() => {
         setShowIntro(false);
-      }, 10000); // Adjust the delay as needed
+      }, 10000);
 
-      // Clear the timeout to avoid memory leaks
       return () => clearTimeout(fadeOutTimer);
     }
   }, [videoPlayed]);
