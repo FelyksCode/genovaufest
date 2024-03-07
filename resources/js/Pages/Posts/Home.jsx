@@ -15,8 +15,6 @@ import Divisihome from "@/Components/Home/Divisihome";
 import { Head } from "@inertiajs/react";
 
 
-
-
 export default function Homepage() {
     const [showIntro, setShowIntro] = useState(true);
 
@@ -54,8 +52,9 @@ export default function Homepage() {
                     <section className="snap-y snap-mandatory overflow-hidden ">
                         <Fade>
                             <Divisihome></Divisihome>
+                            {/* <HomePart2></HomePart2> */}
                             <Rangkaian></Rangkaian>
-                            <FindMore></FindMore>
+                            {/* <FindMore></FindMore> */}
                             <Footer></Footer>
                         </Fade>
                     </section>

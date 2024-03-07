@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
-import Eulympic from "../../../../public/Images/Carousels/Rangkaian/E-Ulympic.png";
+
+import Unify from "../../../../public/Images/Carousels/Rangkaian/Unify.png";
+import Gifunify from "../../../../public/Images/Carousels/Rangkaian/Unify.gif";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -13,12 +15,10 @@ function Rangkaian() {
     const cards = [
         {
             href: "https://www.mythrillfiction.com/the-dark-rider",
-            coverImage:
-                "https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg",
+            coverImage: Unify,
             titleImage:
                 "https://ggayane.github.io/css-experiments/cards/dark_rider-title.png",
-            characterImage:
-                "https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp",
+            characterImage: Unify,
         },
         {
             href: "https://www.mythrillfiction.com/force-mage",
@@ -72,9 +72,9 @@ function Rangkaian() {
     const Card = ({ card }) => (
         <a href={card.href} target="_blank" className="card">
             <div className="wrapper flex place-self-center ">
-                <img src={card.coverImage} className="cover-image" />
+                <img src={card.coverImage} className="cover-image bg-white" />
             </div>
-            <img src={card.titleImage} className="title" />
+            {/* <img src={card.titleImage} className="title" /> */}
             <img
                 src={card.characterImage}
                 className="character flex place-self-center"

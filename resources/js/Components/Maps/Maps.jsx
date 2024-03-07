@@ -48,4 +48,4 @@ function Maps({ onVideoEnd }) {
   );
 }
 
-export default Maps
+export default Maps;

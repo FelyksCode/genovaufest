@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 
 //Asset
@@ -7,7 +7,7 @@ import img2 from "../../../../public/Images/Carousels/LogoDivisi_Baru/BPH.png";
 import img3 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dekorasi.png";
 import img4 from "../../../../public/Images/Carousels/LogoDivisi_Baru/Dokumentasi.png";
 import img5 from "../../../../public/Images/Carousels/LogoDivisi_Baru/FreshMoney.png";
-import CloudVid from "../../../../public/Images/Bgimage/cloud.mp4"
+import CloudVid from "../../../../public/Images/Bgimage/cloud.mp4";
 import "/resources/css/app.css";
 import { Fade } from 'react-reveal';
 
@@ -50,4 +50,4 @@ function MapsReact() {
   )
 }
 
-export default MapsReact
+export default MapsReact;

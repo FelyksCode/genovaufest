@@ -34,67 +34,67 @@ function Spinner() {
     const verticalimages = [
         {
             image: Slideimg1,
-            Judul: "Rome (BPH)",
+            Judul: "Rome",
             Text: "Pusat ibu kota di Italia. menjadi destinasi utama para turis saat berkunjung. Divisi BPH menjadi pusat utama informasi acara dan divisi lainnya.",
         },
         {
             image: Slideimg2,
-            Judul: "Tuscany (Acara)",
+            Judul: "Tuscany",
             Text: "Kota Tuscany dikenal sebagai kota pusat inovasi di masa Renaissance. Divisi acara menjadi pusat inovasi dalam acara ini.",
         },
         {
             image: Slideimg3,
-            Judul: "Florence (Dekorasi)",
+            Judul: "Florence",
             Text: "Kota Florence dikenal sebagai kota terindah di Italia karena warisan budaya, arsitektur, dan seni yang sangat menakjubkan. Seperti Florence yang dipenuhi dengan keindahan, divisi Dekorasi akan membantu memperindah venue-venue yang akan digunakan oleh UMN Festival 2024.",
         },
         {
             image: Slideimg4,
-            Judul: "Napoli (Documentation)",
+            Judul: "Napoli",
             Text: "Kota Napoli dikenal dengan perpaduan nuansa kuno dan modern. Napoli menjadi kota dengan seni, arsitektur, dan peninggalan arkeologi yang menarik banyak turis untuk berfoto. Divisi dokumentasi memiliki tugas dalam mengabdikan banyak momen acara.",
         },
         {
             image: Slideimg5,
-            Judul: "Venezia (Fresh Money)",
+            Judul: "Venezia",
             Text: "Kota Venezia merupakan kota yang terkenal karena aspek perdagangan dan pariwisata. Maka dari itu, Venezia memiliki pemasukan ekonomi yang besar bagi Italia. Seperti Venezia, divisi Fresh Money akan mendukung UMN Festival 2024 dengan berbagai kegiatan wirausaha.",
         },
         {
             image: Slideimg6,
-            Judul: "Lazio (Konsumsi)",
+            Judul: "Lazio",
             Text: "Kota Lazio dikenal sebagai kota yang menemukan banyak macam pasta yang kita kenal hingga saat ini. Seperti Lazio yang menyediakan makanan bagi para penduduknya, divisi Konsumsi juga akan menyediakan makanan bagi seluruh panitia.",
         },
         {
             image: Slideimg7,
-            Judul: "Milan (Lomba)",
+            Judul: "Milan",
             Text: "Kota Milan yang terkenal dengan pusat sepak bola di Italia yaitu AC Milan. Terdapat banyak kompetisi yang berlangsung di kota tersebut khususnya sepak bola.",
         },
         {
             image: Slideimg8,
-            Judul: "Ardea (Perlengkapan)",
+            Judul: "Ardea",
             Text: "Kota Ardea terkenal dengan tempat wisata yang beragam seperti pantai, hotel, destinasi, dan makanannya. Divisi perlengkapan siap menyediakan kebutuhan yang diperlukan, sama halnya dengan kota Ardea yang lengkap akan destinasi wisata.",
         },
         {
             image: Slideimg9,
-            Judul: "Catania (Publication)",
+            Judul: "Catania",
             Text: "Catania merupakan kota terbesar kedua di Sisilia, Italia. menjadikannya sebagai kota terpadat kedua di pulau tersebut. Divisi publikasi yang menarik banyak partisipan.",
         },
         {
             image: Slideimg10,
-            Judul: "Turin (Sponsorship)",
+            Judul: "Turin",
             Text: "Kota Turin dikenal sebagai salah satu kota dengan pemasukan ekonomi terbesar di Italia karena merupakan pusat dari industri otomotif. Seperti Turin, divisi Sponsorship juga merupakan divisi yang bertugas untuk mencari pemasukan dana.",
         },
         {
             image: Slideimg11,
-            Judul: "Alba (Ticketing) ",
+            Judul: "Alba",
             Text: "Kota Alba dikenal sebagai kota administrasi di Italia. Divisi ticketing yang bertanggung jawab atas administrasi tiket ufest.",
         },
         {
             image: Slideimg12,
-            Judul: "Pisa (Visual)",
+            Judul: "Pisa",
             Text: "Kota Pisa dikenal sebagai kota yang memiliki banyak destinasi wisata yang berhubungan desain seperti desain arsitektur dan museum lukisan. Seperti kota Pisa yang dipenuhi dengan kreativitas, divisi Visual akan memenuhi kebutuhan kreatif dari acara ini.",
         },
         {
             image: Slideimg13,
-            Judul: "Genova (Website)",
+            Judul: "Genova",
             Text: "Kota Genova dikenal sebagai pusat ekonomi industri, contohnya seperti baja. Genova, Italia menjadi kota perkembangan yang lebih berteknologi maju dan ramah lingkungan.",
         },
     ];
@@ -138,17 +138,17 @@ function Spinner() {
                             key={index}
                             className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
                         >
-                            <img src={item.image} alt="" />
-                            <div
-                                className="opacity-0 bg-white/50 w-[900px] h-[200px] -mx-[290px] -my-[230px] flex 
-                            items-center text-center rounded-3xl ml-[120px] transition-transform md:-translate-x-[-500px] 
-                            -translate-x-[-400px] duration-500  infodivisi"
-                            >
-                                <div className="juduldivisi w-full">
-                                    <h1 className="">{item.Judul}</h1>
+                            <div className="bungkusimg">
+                                <img src={item.image} alt="Divison" />
+                            </div>
+                            <div className="opacity-0 bg-white/70 infodivisi p-5 rounded-2xl">
+                                <div className="juduldivisi">
+                                    <h1 className="text-center">
+                                        {item.Judul}
+                                    </h1>
                                 </div>
-                                <div className="artidivisi w-full">
-                                    <p className="">{item.Text}</p>
+                                <div className="artidivisi">
+                                    <p className="text-center">{item.Text}</p>
                                 </div>
                             </div>
                         </SwiperSlide>
