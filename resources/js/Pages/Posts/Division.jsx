@@ -5,7 +5,6 @@ import { Head } from "@inertiajs/react";
 import React from "react";
 import { Fade } from "react-reveal";
 
-
 function Division() {
     return (
         <>

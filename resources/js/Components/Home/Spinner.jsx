@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // Package
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-cards";
 import {
     Autoplay,
     Pagination,
     Navigation,
     Keyboard,
     Mousewheel,
+    EffectCards,
 } from "swiper/modules";
 
 // Assets
@@ -29,8 +31,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // CSS
 import "/resources/css/vertical.css";
+import "swiper/css/effect-fade";
 
 function Spinner() {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const isWideScreen = windowWidth <= 768;
+
     const verticalimages = [
         {
             image: Slideimg1,
@@ -99,64 +105,133 @@ function Spinner() {
         },
     ];
 
-    return (
-        <div className="w-full h-[100vh] bungkusan">
-            <div className=" bg-white/30 w-full h-full flex justify-center items-center">
-                <Swiper
-                    spaceBetween={0}
-                    slidesPerView={3}
-                    direction="vertical"
-                    navigation={true}
-                    mousewheel={true}
-                    keyboard={{
-                        enabled: true,
-                    }}
-                    // autoplay={{
-                    //     delay: 3000,
-                    //     disableOnInteraction: false,
-                    // }}
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
 
-                    autoplay={false}
-                    pagination={{
-                        clickable: true,
-                        dynamicBullets: true,
-                    }}
-                    // pagination={false}
-                    centeredSlides={true}
-                    loop="true"
-                    modules={[
-                        Autoplay,
-                        Pagination,
-                        Navigation,
-                        Keyboard,
-                        Mousewheel,
-                    ]}
-                    className="mySwiper"
-                >
-                    {verticalimages.map((item, index) => (
-                        <SwiperSlide
-                            key={index}
-                            className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
-                        >
-                            <div className="bungkusimg">
-                                <img src={item.image} alt="Divison" />
-                            </div>
-                            <div className="opacity-0 bg-white/70 infodivisi p-5 rounded-2xl">
-                                <div className="juduldivisi">
-                                    <h1 className="text-center">
-                                        {item.Judul}
-                                    </h1>
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    if (isWideScreen) {
+        return (
+            <div className="w-full h-[100vh] bungkusan">
+                <div className="bg-white/30 w-full h-full flex justify-center items-center">
+                    <Swiper
+                        spaceBetween={0}
+                        slidesPerView={"auto"}
+                        centeredSlides={true}
+                        effect={"cards"}
+                        direction={"horizontal"}
+                        pagination={{ clickable: true, dynamicBullets: true }}
+                        mousewheel={true}
+                        keyboard={{
+                            enabled: true,
+                        }}
+                        loop="true"
+                        modules={[
+                            Autoplay,
+                            Pagination,
+                            Navigation,
+                            Keyboard,
+                            Mousewheel,
+                            EffectCards,
+                        ]}
+                        cardsEffect={{ slideShadows: false }}
+                        initialSlide={1}
+                        className="mySwiper"
+                    >
+                        {verticalimages.map((item, index) => (
+                            <SwiperSlide
+                                key={index}
+                                className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
+                            >
+                                <div className="opacity-0 bg-white/70 infodivisi p-5 rounded-2xl">
+                                    <div className="juduldivisi">
+                                        <h1 className="text-center">
+                                            {item.Judul}
+                                        </h1>
+                                    </div>
+                                    <div className="artidivisi">
+                                        <p className="text-center">
+                                            {item.Text}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="artidivisi">
-                                    <p className="text-center">{item.Text}</p>
+                                <div className="bungkusimg">
+                                    <img src={item.image} alt="Divison" />
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return (
+            <div className="w-full h-[100vh] bungkusan">
+                <div className=" bg-white/30 w-full h-full flex justify-center items-center">
+                    <Swiper
+                        spaceBetween={0}
+                        slidesPerView={3}
+                        direction={"vertical"}
+                        navigation={true}
+                        mousewheel={true}
+                        keyboard={{
+                            enabled: true,
+                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
+
+                        autoplay={false}
+                        pagination={{
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                        // pagination={false}
+                        centeredSlides={true}
+                        loop="true"
+                        modules={[
+                            Autoplay,
+                            Pagination,
+                            Navigation,
+                            Keyboard,
+                            Mousewheel,
+                        ]}
+                        className="mySwiper"
+                    >
+                        {verticalimages.map((item, index) => (
+                            <SwiperSlide
+                                key={index}
+                                className="transition-all duration-3000 hover:blur-none blur cursor-pointer"
+                            >
+                                <div className="bungkusimg">
+                                    <img src={item.image} alt="Divison" />
+                                </div>
+                                <div className="opacity-0 bg-white/70 infodivisi p-5 rounded-2xl">
+                                    <div className="juduldivisi">
+                                        <h1 className="text-center">
+                                            {item.Judul}
+                                        </h1>
+                                    </div>
+                                    <div className="artidivisi">
+                                        <p className="text-center">
+                                            {item.Text}
+                                        </p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Spinner;

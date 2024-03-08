@@ -10,7 +10,6 @@ import "./Stylerangkaian.css";
 import "swiper/css";
 
 function Rangkaian() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const isWideScreen = window.innerWidth <= 768;
     const cards = [
         {
@@ -57,17 +56,6 @@ function Rangkaian() {
                 "https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp",
         },
     ];
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        // Cleanup the event listener on component unmount
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
 
     const Card = ({ card }) => (
         <a href={card.href} target="_blank" className="card">
